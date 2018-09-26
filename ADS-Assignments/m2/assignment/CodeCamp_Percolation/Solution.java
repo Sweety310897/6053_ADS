@@ -41,9 +41,9 @@ class Percolation {
    		wqu.union(component(row,col), component(row,col-1));
    	}
    }
-   if(col>0 && col <= size-1){
-   	if(grid[row][col+1]==1) {
-   		wqu.union(component(row,col), component(row,col+1));
+   if(col <= size-1){
+   	if(grid[row][col-1]==1) {
+   		wqu.union(component(row,col), component(row,col-1));
    	}
    }
    }
