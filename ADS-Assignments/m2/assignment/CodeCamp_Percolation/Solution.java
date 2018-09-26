@@ -14,57 +14,62 @@ class Percolation {
 	int opensites;
 	int size;
 	WeightedQuickUnionUF wqu;
-   public Percolation(int size) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      size  The size
+	 */
+    Percolation(int size) {
    // create n-by-n grid, with all sites blocked
-   grid = new int[size][size];
-   opensites = 0;
-   wqu = new WeightedQuickUnionUF((size * size) + 2);
-   size = size;
-   }
+    grid = new int[size][size];
+    opensites = 0;
+    wqu = new WeightedQuickUnionUF((size * size) + 2);
+    size = size;
+    }
    /**
     * open method.
     *
     * @param      row   The row
     * @param      col   The col
     */
-   public void open(int row, int col) {
+    public void open(int row, int col) {
    	// open site (row, col) if it is not open already
-   row = row - 1;
-   col = col - 1;
-   grid[row][col] = 1;
-   opensites++;
-   if(row == 0){
-   	wqu.union(0, component(row,col));
-   }
-   if(row == size - 1){
-   	wqu.union(((size * size) + 1), component(row,col));
-   }
-   if(row > 0 && row <= size - 1){
-   	if(grid[row + 1][col] == 1) {
-   		wqu.union(component(row,col), component(row + 1,col));
+    row = row - 1;
+    col = col - 1;
+    grid[row][col] = 1;
+    opensites++;
+    if(row == 0){
+   	 wqu.union(0, component(row, col));
+    }
+    if (row == size - 1) {
+   	 wqu.union(((size * size) + 1), component(row, col));
+    }
+    if (row > 0 && row <= size - 1) {
+   	 if (grid[row + 1][col] == 1) {
+   		wqu.union(component(row, col), component(row + 1, col));
    	}
-   }
-   if(row <= size - 1){
-   	if(grid[row - 1][col] == 1) {
-   		wqu.union(component(row,col), component(row - 1,col));
-   	}
-   }
+    }
+    if (row <= size - 1)  {
+   	 if (grid[row - 1][col] == 1) {
+   		wqu.union(component(row,col), component(row - 1, col));
+   	 }
+    }
    //col
-   if(col == size - 1){
-   	wqu.union(((size * size) + 1), component(row,col));
-   }
-   if(col > 0 && col <= size - 1){
-   	if(grid[row][col-1] == 1) {
-   		wqu.union(component(row,col), component(row,col - 1));
-   	}
-   }
+    if (col == size - 1) {
+   	 wqu.union(((size * size) + 1), component(row, col));
+    }
+    if (col > 0 && col <= size - 1) {
+   	 if (grid[row][col-1] == 1) {
+   		wqu.union(component(row, col), component(row,col - 1));
+   	 }
+    }
    //
-   if(col <= size - 1){
-   	if(grid[row][col + 1] == 1) {
-   		wqu.union(component(row,col), component(row,col + 1));
-   	}
-   }
-   }
+    if (col <= size - 1) {
+   	 if (grid[row][col + 1] == 1) {
+   		wqu.union(component(row, col), component(row,col + 1));
+   	 }
+    }
+    }
    /**
     * component.
     *
@@ -73,9 +78,9 @@ class Percolation {
     *
     * @return     component.
     */
-   int component(int i, int j){
+    int component(final int i, final int j) {
    	 return ((i * size) + j) + 1;
-   }
+    }
    /**
     * Determines if open.
     *
@@ -84,10 +89,10 @@ class Percolation {
     *
     * @return     True if open, False otherwise.
     */
-   public boolean isOpen(int row, int col) {
-   // is site (row, col) open?	
-   return grid[row - 1][col - 1] == 1;
-   }
+    public boolean isOpen(final int row, final int col) {
+   // is site (row, col) open?
+     return grid[row - 1][col - 1] == 1;
+    }
    /**
     * Determines if full.
     *
@@ -96,28 +101,28 @@ class Percolation {
     *
     * @return     True if full, False otherwise.
     */
-   public boolean isFull(int row, int col){
+    public boolean isFull(final int row, final int col) {
    	// is site (row, col) full?
-   return grid[row - 1][col - 1] == 0;
-   }
+     return grid[row - 1][col - 1] == 0;
+    }
    /**
     * noof opensites.
     *
     * @return     noofopensites.
     */
-   public int numberOfOpenSites() {
+    public int numberOfOpenSites() {
    	       // number of open sites
-   return opensites;
-   }
+     return opensites;
+    }
    /**
     * percolates.
     *
     * @return     boolean value.
     */
-   public boolean percolates()    {
-   	// does the system percolate?
-   return wqu.connected(0, (size * size) + 1);
-   }
+    public boolean percolates()    {
+   	 // does the system percolate?
+      return wqu.connected(0, (size * size) + 1);
+    }
 }
 // You can implement the above API to solve the problem
 // class Percolation {
@@ -144,13 +149,18 @@ class Percolation {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	/**
 	 * Constructs the object.
 	 */
 	private Solution() {
 		//constructor.
 	}
+	/**
+	 * main.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int size = s.nextInt();
