@@ -1,6 +1,15 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for percolation.
+ */
 class Percolation {
+	/**
+	 * Constructs the object.
+	 */
+	private Percolation() {
+		//constrcutor.
+	}
 	int[][] grid;
 	int opensites;
 	int size;
@@ -12,6 +21,12 @@ class Percolation {
    wqu = new WeightedQuickUnionUF((size * size) + 2);
    size = size;
    }
+   /**
+    * open method.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    */
    public void open(int row, int col) {
    	// open site (row, col) if it is not open already
    row = row - 1;
@@ -50,21 +65,55 @@ class Percolation {
    	}
    }
    }
+   /**
+    * component.
+    *
+    * @param      i     i val.
+    * @param      j     j val.
+    *
+    * @return     component.
+    */
    int component(int i, int j){
    	 return ((i * size) + j) + 1;
    }
+   /**
+    * Determines if open.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    *
+    * @return     True if open, False otherwise.
+    */
    public boolean isOpen(int row, int col) {
    // is site (row, col) open?	
    return grid[row - 1][col - 1] == 1;
    }
+   /**
+    * Determines if full.
+    *
+    * @param      row   The row
+    * @param      col   The col
+    *
+    * @return     True if full, False otherwise.
+    */
    public boolean isFull(int row, int col){
    	// is site (row, col) full?
    return grid[row - 1][col - 1] == 0;
-   }  
+   }
+   /**
+    * noof opensites.
+    *
+    * @return     noofopensites.
+    */
    public int numberOfOpenSites() {
    	       // number of open sites
    return opensites;
    }
+   /**
+    * percolates.
+    *
+    * @return     boolean value.
+    */
    public boolean percolates()    {
    	// does the system percolate?
    return wqu.connected(0, (size * size) + 1);
@@ -92,13 +141,22 @@ class Percolation {
 // 		System.out.println(Arrays.deepToString(a));
 // 	}
 // }
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor.
+	}
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
-		int size=s.nextInt();
-		Percolation pr=new Percolation(size);
-		while(s.hasNext()) {
-			pr.open(s.nextInt(),s.nextInt());
+		int size = s.nextInt();
+		Percolation pr = new Percolation(size);
+		while (s.hasNext()) {
+			pr.open(s.nextInt(), s.nextInt());
 		}
 		System.out.println(pr.percolates());
 	}
