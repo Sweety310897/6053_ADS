@@ -63,6 +63,12 @@ class Percolation {
    		wqu.union(component(row, col), component(row,col - 1));
    	 }
     }
+    //su
+    if (col > 0) {
+   	 if (grid[row][col+1] == 1) {
+   		wqu.union(component(row, col), component(row, col+1));
+   	}
+    }
    //
     if (col <= size - 1) {
    	 if (grid[row][col + 1] == 1) {
