@@ -23,7 +23,7 @@ class Stack {
     /**
      * push the elements.
      *
-     * @param      p     { parameter_description }
+     * @param      p    p is char.
      */
     public void push(final char p) {
         Node lol = head;
@@ -34,26 +34,20 @@ class Stack {
     /**
      * pop the elements.
      *
-     * @return     { description_of_the_return_value }
+     * @return     pops element.
      */
     public char pop() {
         if (head == null) {
             return 'e';
         }
-        // if (head.next == null) {
-        //  char r = head.item;
-        //  head = null;
-        //  return r;
-        // } else {
         char r = head.item;
         head = head.next;
         return r;
-        // }
     }
     /**
      * get the head.
      *
-     * @return     { description_of_the_return_value }
+     * @return     gets head.
      */
     public Node gethead() {
         return head;
