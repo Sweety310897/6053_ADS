@@ -1,3 +1,7 @@
+/**
+ * Balanced Paranthesis.
+ * @author Swapnika Vakacharla.
+ */
 import java.util.Scanner;
 /**
  * class for stack.
@@ -65,10 +69,10 @@ class Stack {
      */
     public String toString() {
         String str = "";
-        Node temp = head;
-        while (temp != null) {
-            str += temp.item;
-            temp = temp.next;
+        Node fun = head;
+        while (fun != null) {
+            str += fun.item;
+            fun = fun.next;
         }
         return str;
     }
@@ -88,11 +92,15 @@ class BalancedParanthesis {
      *
      * @param      str   The string
      *
-     * @return     boolean value.
+     * @return     { description_of_the_return_value }
      */
     public boolean balance(final String str) {
         Stack s = new Stack();
         for (int i = 0; i < str.length(); i++) {
+            // if (head == null) {
+            //  return true;
+            // }
+            // System.out.println(s + " " + str.charAt(i));
             if (str.charAt(i) == '[' || str.charAt(i) == '('
                 || str.charAt(i) == '{') {
                 s.push(str.charAt(i));
@@ -101,6 +109,8 @@ class BalancedParanthesis {
                 if ((ch == '(' && str.charAt(i) == ')') || (ch == '['
                     && str.charAt(i) == ']') || (ch == '{'
                     && str.charAt(i) == '}')) {
+                    // ch = s.pop();
+                    // System.out.println(ch + "39"+ str.charAt(i));
                     continue;
                 } else {
                     return false;
@@ -127,13 +137,13 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int num = Integer.parseInt(scan.nextLine());
-        String[] strarray = new String[num];
-        for (int i = 0; i < num; i++) {
+        int n = Integer.parseInt(scan.nextLine());
+        String[] strarray = new String[n];
+        for (int i = 0; i < n; i++) {
             strarray[i] = scan.nextLine();
         }
         BalancedParanthesis bp = new BalancedParanthesis();
-        for (int i = 0; i < num; i++) {
+        for (int i = 0; i < n; i++) {
             if (bp.balance(strarray[i])) {
                 System.out.println("YES");
             } else {
