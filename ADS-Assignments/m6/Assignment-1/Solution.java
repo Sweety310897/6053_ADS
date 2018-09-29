@@ -1,7 +1,16 @@
 import java.util.Scanner;
 import java.util.*;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
-    
+    /**
+     * { function_description }
+     *
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList numberToDigits(String number) {
     	LinkedList l = new LinkedList();
     	// int a = number.toCharArray();
@@ -12,7 +21,13 @@ class AddLargeNumbers {
     	// }
     	return l;
     }
-
+    /**
+     * { function_description }
+     *
+     * @param      list  The list
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String digitsToNumber(LinkedList list) {
     	String s = "";
         while(!list.isEmpty()) {
@@ -20,29 +35,63 @@ class AddLargeNumbers {
         }
         return s;
     }
-
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {    	
     	return null;
     }
 }
+/**
+ * Class for node.
+ */
 class Node {
 	protected String data;
 	protected Node link;
-	public Node() {
+	/**
+     * Constructs the object.
+     */
+    public Node() {
 		link = null;
 		data = null;
 	}
+    /**
+     * Constructs the object.
+     *
+     * @param      d     { parameter_description }
+     * @param      n     { parameter_description }
+     */
 	public Node(String d, Node n) {
 		data = d;
 		link = n;
 		//System.out.println(link);
 	}
+    /**
+     * Sets the data.
+     *
+     * @param      d     { parameter_description }
+     */
 	public void setData(String d) {
 		data = d;
 	}
+    /**
+     * Gets the link.
+     *
+     * @return     The link.
+     */
 	public Node getLink() {
 		return link;
 	}
+    /**
+     * Gets the data.
+     *
+     * @return     The data.
+     */
 	public String getData() {
 		return data;
 	}
@@ -76,14 +125,17 @@ public class Solution {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
-                System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
-                System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
+                System.out.println(AddLargeNumbers.digitsToNumber(
+                    pDigits));
+                System.out.println(AddLargeNumbers.digitsToNumber(
+                    qDigits));
                 break;
 
             case "addLargeNumbers":
                 pDigits = AddLargeNumbers.numberToDigits(p);
                 qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                LinkedList result = AddLargeNumbers.addLargeNumbers(
+                    pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
         }
