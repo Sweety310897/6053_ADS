@@ -35,7 +35,7 @@ class Node {
 	public Node(String d, Node n) {
 		data = d;
 		link = n;
-		System.out.println(link);
+		//System.out.println(link);
 	}
 	public void setData(String d) {
 		data = d;
