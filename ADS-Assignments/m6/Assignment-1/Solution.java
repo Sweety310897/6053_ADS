@@ -97,15 +97,15 @@ class Node {
 	}
 }
 class LinkedList {
-	public Node start;
+	private Node start;
 	protected Node end;
-    public int size;
-    public LinkedList(){
+    private int size;
+    LinkedList() {
         size = 0;
         start = null;
         end = null;
     }
-    public void push(String n) {
+    public void push(final String n) {
         Node node = new Node();
         node.data = n;
         node.link = null;
@@ -115,13 +115,27 @@ class LinkedList {
         return start == null;
     }
 }
-public class Solution {
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * { item_description }
+     */
+    private Solution() {
+        //constructor.
+    }
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        switch(input){
+        switch (input) {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
@@ -138,7 +152,8 @@ public class Solution {
                     pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
+            default:
+            break;
         }
-    }
-    
+    }   
 }
