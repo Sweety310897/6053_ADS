@@ -5,7 +5,7 @@ class AddLargeNumbers {
     public static LinkedList numberToDigits(String number) {
     	LinkedList l = new LinkedList();
     	// int a = number.toCharArray();
-        //System.out.println(number);
+        System.out.println(number);
         l.push(number);
     	// for(int i = 0; i < a; i++) {
     	// 	l.addnum(Character.getnumberval(a[i]));
@@ -14,11 +14,11 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(LinkedList list) {
-    	String s = "";
-        while(!list.isEmpty()) {
-            s += list;
-        }
-        return s;
+    	// String s = "";
+     //    while(!list.isEmpty()) {
+     //        s += list;
+     //    }
+        return null;
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {    	
