@@ -106,7 +106,19 @@ public class Solution {
 				case "push" :sta.insert(Integer.parseInt(tokens[1]));
 				System.out.println( sta.display());
 				break;
-				case "pop" :sta.delete();
+				case "pop" :
+				//sta.delete();
+				if (!sta.isEmpty()) {
+                    sta.delete();
+                    //System.out.println(sq);
+                    if (!sta.isEmpty()) {
+                        System.out.println(sta);
+                    } else {
+                        System.out.println("Steque is empty.");
+                    }
+                } else {
+                    System.out.println("Steque is empty.");
+                }
 				break;
 				// case "display": sta.display();
 				// break;
