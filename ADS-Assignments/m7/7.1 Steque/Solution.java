@@ -35,6 +35,7 @@ class Stequeue {
 		temp.next = head;
 
 		head = temp;
+		size++;
 		//System.out.println(start);
 	}
 	void enqueueinsert(int item){
@@ -77,9 +78,9 @@ class Stequeue {
 	void delete() {
 		// if(!sta.isEmpty()) {
 		// 	System.out.println("empty");
-		
-		head = head.next;
 		size--;
+		head = head.next;
+		
 	}
 	boolean isEmpty() {
 		if(size == 0) {
