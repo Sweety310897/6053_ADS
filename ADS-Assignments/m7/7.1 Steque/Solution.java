@@ -1,24 +1,52 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for node.
+ */
 class Node {
+	/**
+	 * data.
+	 */
 	int data;
+	/**
+	 * next.
+	 */
 	Node next;
+	/**
+	 * Constructs the object.
+	 */
 	Node() {
 
 	}
-	Node(int element) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      element  The element
+	 */
+	Node(final int element) {
 		this.data = element;
 	}
 }
+/**
+ * Class for stequeue.
+ */
 class Stequeue {
 	private Node head;
 	private int size;
 	private Node tail;
+	/**
+	 * Constructs the object.
+	 */
 	Stequeue() {
 		head = new Node();
 		tail = new Node();
 		size = 0;
 	}
+	/**
+	 * insert.
+	 *
+	 * @param      item  The item
+	 */
 	void insert(int item) {
 		if(size == 0) {
 			head.data = item;
@@ -35,6 +63,11 @@ class Stequeue {
 		size++;
 		//System.out.println(start);
 	}
+	/**
+	 * insert.
+	 *
+	 * @param      item  The item
+	 */
 	void enqueueinsert(int item){
 		if(size == 0) {
 			tail.data = item;
@@ -52,6 +85,11 @@ class Stequeue {
 		}
 		size++;
 	}
+	/**
+	 * display.
+	 *
+	 * @return     String.
+	 */
 	public String display()
     {
         //System.out.print("\nSingly Linked List = ");
@@ -69,12 +107,20 @@ class Stequeue {
         return "[]";
         // if (size == 0)
     }
+    /**
+     * delete method.
+     */
 	void delete() {
 		// if(!sta.isEmpty()) {
 		// 	System.out.println("empty");
 		size--;
 		head = head.next;
 	}
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	boolean isEmpty() {
 		if(size == 0) {
 			return true;
@@ -83,25 +129,45 @@ class Stequeue {
 			return false;
 		}
 	}
+	/**
+	 * size.
+	 *
+	 * @return     size.
+	 */
 	int size() {
 		return size;
 	}
 }
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constrcutor.
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int num = Integer.parseInt(scan.nextLine());
 		Stequeue sta = new Stequeue();
 		while (scan.hasNext()) {
 			String input = scan.nextLine();
-			if (input.equals("")|| input.equals(null)) {
+			if (input.equals("") || input.equals(null)) {
 				sta = new Stequeue();
 				System.out.println("");
 			} else {
 				String[] tokens = input.split(" ");
 			//System.out.println(Arrays.toString(tokens));
 			switch (tokens[0]) {
-				case "push" :sta.insert(Integer.parseInt(tokens[1]));
+				case "push" :sta.insert(Integer.parseInt(
+					tokens[1]));
 				System.out.println(sta.display());
 				break;
 				case "pop" :
@@ -126,7 +192,7 @@ public class Solution {
 				default:
 				break;
 			}
-			}	
+			}
 		}
 	}
 }
