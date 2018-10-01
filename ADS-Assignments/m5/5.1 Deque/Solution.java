@@ -18,7 +18,7 @@ class Deque {
         /**
          * data.
          */
-        private int data;
+        private String data;
         /**
          * next link.
          */
@@ -29,7 +29,7 @@ class Deque {
          * @param      val   The value
          * @param      link  The link
          */
-        Node(final int val, final Node link) {
+        Node(final String val, final Node link) {
             this.data = val;
             this.next = link;
         }
@@ -47,12 +47,16 @@ class Deque {
      *
      * @param      value  The value
      */
-    void pushLeft(final int value) {
+    void pushLeft(final String value) {
         if (first == null) {
             first = new Node(value, null);
+            //first.data = value;
+            //first.next = null;
             last = first;
         } else {
             Node newnode = new Node(value, first);
+            // newnode.data = value;
+            // newnode.next = first;
             first = newnode;
         }
 
@@ -63,12 +67,16 @@ class Deque {
      *
      * @param      value  The value
      */
-    void pushRight(final int value) {
+    void pushRight(final String value) {
         if (last == null) {
             last = new Node(value, null);
+            // last.data = value;
+            // last.next = null;
             first = last;
         } else {
             Node newnode = new Node(value, null);
+            // newnode.data = value;
+            // newnode.next = null;
             last.next = newnode;
             last = newnode;
         }
@@ -76,27 +84,20 @@ class Deque {
     }
     /**
      * popleft.
-     *
-     * @return     { description_of_the_return_value }
      */
-    int popLeft() {
+    void popLeft() {
         if (first != null) {
             Node popped = first;
             first = first.next;
+            popped.data = null;
             popped.next = null;
             noOfElements--;
-            return popped.data;
-
-        } else {
-            return 0;
         }
     }
     /**
-     * pop right.
-     *
-     * @return     { description_of_the_return_value }
+     * popright.
      */
-    int popRight() {
+    void popRight() {
         if (last != null) {
             Node temp = null;
             Node popped = last;
@@ -107,11 +108,9 @@ class Deque {
             }
             last = temp;
             last.next = null;
-            //popped.next = null;
+            popped.data = null;
+            popped.next = null;
             noOfElements--;
-            return popped.data;
-        } else {
-            return 0;
         }
     }
     /**
@@ -140,7 +139,7 @@ class Deque {
             String str = "";
             Node temp = first;
             while (temp != null) {
-                str += Integer.toString(temp.data) + ", ";
+                str += temp.data + ", ";
                 temp = temp.next;
             }
             return "[" + str.substring(0, str.length() - 2) + "]";
@@ -167,24 +166,46 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int noOfinputs = sc.nextInt();
-        for (int i = 0; i < noOfinputs; i++) {
-            Deque queue = new Deque();
-            sc.nextLine();
-            int n = sc.nextInt();
-            int m = sc.nextInt();
-            for (int j = 0; j < n; j++) {
-                queue.pushRight(j);
-            }
-            while (queue.size() != 1) {
-                for (int j = 0; j < m - 1; j++) {
-                    queue.pushRight(queue.popLeft());
+        int n = sc.nextInt();
+        sc.nextLine();
+        Deque d = new Deque();
+        for (int i = 0; i < n; i++) {
+            String[] input = sc.nextLine().split(" ");
+            switch (input[0]) {
+            case "pushLeft":
+                d.pushLeft(input[1]);
+                System.out.println(d.print());
+                break;
+            case "pushRight":
+                d.pushRight(input[1]);
+                System.out.println(d.print());
+                break;
+            case "popLeft":
+                if (!d.isEmpty()) {
+                    d.popLeft();
+                    System.out.println(d.print());
+                } else {
+                    System.out.println("Deck is empty");
                 }
-                System.out.print(queue.popLeft() + " ");
-                //queue.print();
+                break;
+            case "popRight":
+                if (!d.isEmpty()) {
+                    d.popRight();
+                    System.out.println(d.print());
+                } else {
+                    System.out.println("Deck is empty");
+                }
+                break;
+            case "size":
+                System.out.println(d.size());
+                break;
+            case "isEmpty":
+                System.out.println(d.isEmpty());
+                break;
+            default:
+                break;
+
             }
-            System.out.print(queue.popLeft());
-            System.out.println();
         }
     }
 }
