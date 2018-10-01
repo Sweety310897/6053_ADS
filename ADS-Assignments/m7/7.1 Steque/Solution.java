@@ -104,7 +104,7 @@ public class Solution {
 			//System.out.println(Arrays.toString(tokens));
 			switch(tokens[0]) {
 				case "push" :sta.insert(Integer.parseInt(tokens[1]));
-				System.out.println( sta.display());
+				System.out.println(sta.display());
 				break;
 				case "pop" :
 				//sta.delete();
@@ -112,7 +112,7 @@ public class Solution {
                     sta.delete();
                     //System.out.println(sq);
                     if (!sta.isEmpty()) {
-                        System.out.println(sta);
+                        System.out.println(sta.display());
                     } else {
                         System.out.println("Steque is empty.");
                     }
