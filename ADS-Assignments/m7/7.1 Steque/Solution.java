@@ -10,7 +10,6 @@ class Node {
 		this.data = element;
 	}
 }
-
 class Stequeue {
 	private Node head;
 	private int size;
@@ -31,9 +30,7 @@ class Stequeue {
 		}
 		Node temp = new Node();
 		temp.data = item;
-
 		temp.next = head;
-
 		head = temp;
 		size++;
 		//System.out.println(start);
@@ -54,10 +51,8 @@ class Stequeue {
 			tail = oldtail;
 		}
 		size++;
-
 	}
 	public String display()
-
     {
         //System.out.print("\nSingly Linked List = ");
         if (size != 0) {
@@ -72,15 +67,13 @@ class Stequeue {
             return str.substring(0, str.length() - 2);
         }
         return "[]";
-        // if (size == 0) 
-       
+        // if (size == 0)
     }
 	void delete() {
 		// if(!sta.isEmpty()) {
 		// 	System.out.println("empty");
 		size--;
 		head = head.next;
-		
 	}
 	boolean isEmpty() {
 		if(size == 0) {
@@ -99,15 +92,15 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int num = Integer.parseInt(scan.nextLine());
 		Stequeue sta = new Stequeue();
-		while(scan.hasNext()) {
+		while (scan.hasNext()) {
 			String input = scan.nextLine();
-			if(input.equals("")|| input.equals(null)) {
+			if (input.equals("")|| input.equals(null)) {
 				sta = new Stequeue();
 				System.out.println("");
 			} else {
 				String[] tokens = input.split(" ");
 			//System.out.println(Arrays.toString(tokens));
-			switch(tokens[0]) {
+			switch (tokens[0]) {
 				case "push" :sta.insert(Integer.parseInt(tokens[1]));
 				System.out.println(sta.display());
 				break;
@@ -133,10 +126,7 @@ public class Solution {
 				default:
 				break;
 			}
-
-			}
-			
+			}	
 		}
-		
 	}
 }
