@@ -10,7 +10,7 @@ class Deque {
     /**
      * first, last nodes.
      */
-    private Node first, last;
+    private Node firstelement, lastelement;
     /**
      * Class for node.
      */
@@ -39,8 +39,8 @@ class Deque {
      */
     Deque() {
         noOfElements = 0;
-        first = null;
-        last = null;
+        firstelement = null;
+        lastelement = null;
     }
     /**
      * Pushes a left.
@@ -48,12 +48,12 @@ class Deque {
      * @param      value  The value
      */
     void pushLeft(final int value) {
-        if (first == null) {
-            first = new Node(value, null);
-            last = first;
+        if (firstelement == null) {
+            firstelement = new Node(value, null);
+            lastelement = firstelement;
         } else {
-            Node newnode = new Node(value, first);
-            first = newnode;
+            Node newnode = new Node(value, firstelement);
+            firstelement = newnode;
         }
 
         noOfElements++;
@@ -64,13 +64,13 @@ class Deque {
      * @param      value  The value
      */
     void pushRight(final int value) {
-        if (last == null) {
-            last = new Node(value, null);
-            first = last;
+        if (lastelement == null) {
+            lastelement = new Node(value, null);
+            firstelement = lastelement;
         } else {
             Node newnode = new Node(value, null);
-            last.next = newnode;
-            last = newnode;
+            lastelement.next = newnode;
+            lastelement = newnode;
         }
         noOfElements++;
     }
@@ -80,9 +80,9 @@ class Deque {
      * @return     { description_of_the_return_value }
      */
     int popLeft() {
-        if (first != null) {
-            Node popped = first;
-            first = first.next;
+        if (firstelement != null) {
+            Node popped = firstelement;
+            firstelement = firstelement.next;
             popped.next = null;
             noOfElements--;
             return popped.data;
@@ -97,16 +97,16 @@ class Deque {
      * @return     { description_of_the_return_value }
      */
     int popRight() {
-        if (last != null) {
+        if (lastelement != null) {
             Node temp = null;
-            Node popped = last;
-            Node element = first;
-            while (element != last) {
+            Node popped = lastelement;
+            Node element = firstelement;
+            while (element != lastelement) {
                 temp = element;
                 element = element.next;
             }
-            last = temp;
-            last.next = null;
+            lastelement = temp;
+            lastelement.next = null;
             //popped.next = null;
             noOfElements--;
             return popped.data;
@@ -128,7 +128,7 @@ class Deque {
      * @return     True if empty, False otherwise.
      */
     boolean isEmpty() {
-        return first == null;
+        return firstelement == null;
     }
     /**
      * prints.
@@ -138,7 +138,7 @@ class Deque {
     String print() {
         if (noOfElements != 0) {
             String str = "";
-            Node temp = first;
+            Node temp = firstelement;
             while (temp != null) {
                 str += Integer.toString(temp.data) + ", ";
                 temp = temp.next;
