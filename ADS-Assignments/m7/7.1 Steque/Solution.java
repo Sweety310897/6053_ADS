@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Class for node.
  */
@@ -31,8 +30,17 @@ class Node {
  * Class for stequeue.
  */
 class Stequeue {
+	/**
+	 * head.
+	 */
 	private Node head;
+	/**
+	 * size.
+	 */
 	private int size;
+	/**
+	 * tail.
+	 */
 	private Node tail;
 	/**
 	 * Constructs the object.
@@ -47,8 +55,8 @@ class Stequeue {
 	 *
 	 * @param      item  The item
 	 */
-	void insert(int item) {
-		if(size == 0) {
+	void insert(final int item) {
+		if (size == 0) {
 			head.data = item;
 			head.next = null;
 			tail = head;
@@ -68,8 +76,8 @@ class Stequeue {
 	 *
 	 * @param      item  The item
 	 */
-	void enqueueinsert(int item){
-		if(size == 0) {
+	void enqueueinsert(final int item) {
+		if (size == 0) {
 			tail.data = item;
 			tail.next = null;
 			head = tail;
@@ -90,8 +98,7 @@ class Stequeue {
 	 *
 	 * @return     String.
 	 */
-	public String display()
-    {
+	public String display() {
         //System.out.print("\nSingly Linked List = ");
         if (size != 0) {
             String str = "";
@@ -122,12 +129,10 @@ class Stequeue {
 	 * @return     True if empty, False otherwise.
 	 */
 	boolean isEmpty() {
-		if(size == 0) {
+		if (size == 0) {
 			return true;
 		}
-		else {
-			return false;
-		}
+		return false;
 	}
 	/**
 	 * size.
@@ -141,7 +146,7 @@ class Stequeue {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	/**
 	 * Constructs the object.
 	 */
