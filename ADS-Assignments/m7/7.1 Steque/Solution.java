@@ -100,7 +100,11 @@ public class Solution {
 		Stequeue sta = new Stequeue();
 		while(scan.hasNext()) {
 			String input = scan.nextLine();
-			String[] tokens = input.split(" ");
+			if(input.equals("")|| input.equals(null)) {
+				sta = new Stequeue();
+				System.out.println("");
+			} else {
+				String[] tokens = input.split(" ");
 			//System.out.println(Arrays.toString(tokens));
 			switch(tokens[0]) {
 				case "push" :sta.insert(Integer.parseInt(tokens[1]));
@@ -128,6 +132,9 @@ public class Solution {
 				default:
 				break;
 			}
+
+			}
+			
 		}
 		
 	}
