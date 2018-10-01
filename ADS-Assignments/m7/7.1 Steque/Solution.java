@@ -6,11 +6,11 @@ class Node {
     /**
      * data.
      */
-    int data;
+    protected int data;
     /**
      * next.
      */
-    Node next;
+    protected Node next;
     /**
      * Constructs the object.
      */
