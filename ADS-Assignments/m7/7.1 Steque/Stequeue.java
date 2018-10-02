@@ -58,6 +58,7 @@ class Stequeue {
     }
     /**
      * insert.
+     *This method time complexity is O(1), it takes const time.
      *
      * @param      item  The item
      */
@@ -79,7 +80,8 @@ class Stequeue {
     }
     /**
      * insert.
-     *
+     *This method tme complexity is O(1) takes constant time.
+     *Each time it takes one item and executes.
      * @param      item  The item
      */
     void enqueueinsert(final int item) {
@@ -100,7 +102,7 @@ class Stequeue {
     }
     /**
      * display.
-     *
+     *It takes O(n) time complexity. Iterates till temp!= null.
      * @return     String.
      */
     public String display() {
@@ -120,6 +122,7 @@ class Stequeue {
         // if (size == 0)
     }
     /**
+     *This method takes constant time. O(1)
      * delete method.
      */
     void delete() {
@@ -130,7 +133,7 @@ class Stequeue {
     }
     /**
      * Determines if empty.
-     *
+     *this method takes constant time. O(1).
      * @return     True if empty, False otherwise.
      */
     boolean isEmpty() {
@@ -141,7 +144,7 @@ class Stequeue {
     }
     /**
      * size.
-     *
+     *This method takes constant time. O(1).
      * @return     size.
      */
     int size() {
