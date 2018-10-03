@@ -74,7 +74,7 @@ class Sorting {
 			s += teams[i].teamname + ",";
 
 		}
-		return s;
+		return s.substring(0, s.length() - 1);
 	}
 
 	void SelectionSort() {
