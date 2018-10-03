@@ -53,21 +53,24 @@ class Sorting {
 		size = 0;
 		teams = new CricketRanking[10];
 	}
+	//takes O(n) time complexity.
 	void add(CricketRanking objcricket) {
 		teams[size++] = objcricket;
 		if(size > 10) {
 			resize();
 		}
 	}
+	//takes O(1) complexity.
 	void resize() {
 		teams = Arrays.copyOf(teams, size * 2);
 	}
+	//takes O(n) time complexity.
 	void exchange(CricketRanking[] a, int i, int min) {
-
 		CricketRanking temp = a[min];
 		a[min] = a[i];
 		a[i] = temp;
 	}
+	//takes O(n) time complexity.
 	String display() {
 		String s = "";
 		for(int i = 0; i < size; i++) {
@@ -76,7 +79,7 @@ class Sorting {
 		}
 		return s.substring(0, s.length() - 1);
 	}
-
+	//takes O(n^2) time complexity.
 	void InsertionSort() {
 		for(int i = 0; i < size-1; i++) {
 			int min = i; 
@@ -89,6 +92,7 @@ class Sorting {
 			
 		}
 	}
+	//takes O(1) time complexity.
 	boolean less(CricketRanking[] teams, int j, int min) {
 		return teams[j].compareTo(teams[min]) > 0;
 	}
