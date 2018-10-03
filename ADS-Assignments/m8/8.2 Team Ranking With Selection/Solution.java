@@ -1,9 +1,14 @@
-import java.util.Arrays;
 import java.util.Scanner;
 /**
  * Class for solution.
  */
 class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //constructor.
+    }
     /**
      * main function.
      *
