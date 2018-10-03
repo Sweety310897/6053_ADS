@@ -30,10 +30,10 @@ class CricketRanking {
 		if(this.win < comp.win) {
 			return -1;
 		}
-		if(this.loss > comp.loss) {
+		if(this.loss < comp.loss) {
 			return 1;
 		}
-		if(this.loss < comp.loss) {
+		if(this.loss > comp.loss) {
 			return -1;
 		}
 		if(this.draw > comp.draw) {
