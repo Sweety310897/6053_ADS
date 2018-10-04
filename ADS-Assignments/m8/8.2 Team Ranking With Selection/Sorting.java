@@ -76,7 +76,6 @@ class Sorting {
 		}
 		return s.substring(0, s.length() - 1);
 	}
-
 	void SelectionSort() {
 		for(int i = 0; i < size-1; i++) {
 			int min = i; 
@@ -91,5 +90,7 @@ class Sorting {
 	}
 	boolean less(CricketRanking[] teams, int j, int min) {
 		return teams[j].compareTo(teams[min]) > 0;
+		//j - this.
+		//teams[min] - comp.
 	}
 }
