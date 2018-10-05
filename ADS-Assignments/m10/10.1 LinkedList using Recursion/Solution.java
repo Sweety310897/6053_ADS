@@ -25,8 +25,7 @@ final class Solution {
                     ll.insertAt(Integer.parseInt(input[1]),
                         input[2]);
                     ll.display();   
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     System.out.println("Can't insert at this position.");
                 }
                 break;
@@ -34,8 +33,7 @@ final class Solution {
                 try {
                 ll.reverse();
                 ll.display();   
-                }
-                catch (Exception e) {
+                } catch (Exception e) {
                     System.out.println("No elements to reverse.");
                 }
                 break;
