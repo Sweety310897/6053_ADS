@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] E:\6053_ADS\ADS-Assignments\m9\9.1 Merge Sort Improvements\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+Audit done.
+Checkstyle ends with 1 errors.
