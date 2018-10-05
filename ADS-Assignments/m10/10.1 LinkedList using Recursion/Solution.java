@@ -32,7 +32,7 @@ final class Solution {
                 case "reverse":
                 try {
                 ll.reverse();
-                ll.display(); 
+                ll.display();
                 } catch (Exception e) {
                     System.out.println("No elements to reverse.");
                 }
