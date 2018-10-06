@@ -79,10 +79,18 @@ class Sorting {
 	}
 	String display() {
 		String str = "";
+
 		for(int i = 0; i < size; i++) {
 			str += names[i].studentname + "," + names[i].total + "," + names[i].rescategory + "\n";
 		}
 		return str.substring(0, str.length() - 1);
+	}
+	String display2(){
+		String str1 = "";
+		for(int i = 0; i < 6; i++) {
+			str1 += names[i].studentname + "," + names[i].total + "," + names[i].rescategory + "\n";
+		}
+		return str1.substring(0, str1.length() - 1);
 	}
 	void SelectionSort(){
 		for(int i = 0; i < size- 1; i++) {
@@ -95,6 +103,47 @@ class Sorting {
 			exchange(names, i , min);
 		}
 	}
+	void Selection(){
+		//min = names[i];
+		int[] a = new int[100];
+		//System.out.println("hi");
+		for(int i = 0; i < size; i++) {
+			//System.out.println(names[i].rescategory + "print");
+			if(names[i].rescategory.equals("Open")) {
+				a[i] = 0;
+				//System.out.println("hiopen");
+			}
+			if(names[i].rescategory.equals("BC")) {
+				a[i] = 0;
+				//System.out.println("hibc");
+			}
+			if(names[i].rescategory.equals("SC")) {
+				a[i] = 4;
+				//System.out.println("hisc");
+			}
+			if(names[i]. rescategory.equals("ST")) {
+				a[i] = 1;
+				//System.out.println("hist");
+			}
+		}
+		
+		for(int i = 0; i < size- 1; i++) {
+			int min = i;
+			for(int j = i + 1; j < size; j++) {
+				if(a[j] < a[min]) {
+					min = j;
+					//System.out.println(min+"this is min in SelectionSort");
+				}
+			}
+			//exchange(a, i , min);
+			int temp = a[i];
+			a[i] = a[min];
+			a[min] = temp;
+
+		}
+	}
+
+	
 	void exchange(Ranking[] a, int i, int min) {
 		Ranking temp = a[min];
 		a[min] = a[i];
@@ -125,5 +174,8 @@ public class Solution {
 		sort.SelectionSort();
 		System.out.println(sort.display());
 		System.out.println("");
+		sort.Selection();
+		System.out.println(sort.display2());
+		
 	}
 }
