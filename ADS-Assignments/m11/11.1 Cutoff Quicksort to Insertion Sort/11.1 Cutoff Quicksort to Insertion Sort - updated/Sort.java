@@ -11,15 +11,14 @@ class Sort {
     /**
      * Partition function.
      * This is used to partion the array into two halves.
-     * The time complexity of the function is N^2.
-     * In the worst case the while loop executes N times.
-     * There are two while loops and each take N times of execution.
+     * The time complexity  is N^2.
+     * There are two while loops and each time takes N times of execution.
      *
      * @param      array  The array
      * @param      low    The low
      * @param      high   The high
      *
-     * @return     { value. }
+     * @return     array.
      */
     public int partition(final Comparable[] array,
         final int low, final int high) {
@@ -52,7 +51,7 @@ class Sort {
 
     /**
      * Quick sort.
-     * If number of values in the array are less than 8.
+     * If number of values in the array are less than 7.
      * The complexity of the function is 1.
      *
      * @param      array   The array
@@ -75,8 +74,6 @@ class Sort {
     }
 
     /**
-     * The array and the cutoff value sent from the
-     * main function are sent to the quick sort function.
      * The complexity  of the function is 1.
      *
      * @param      array   The array
@@ -107,10 +104,8 @@ class Sort {
     }
 
     /**
-     * Swapping function.
-     * The values sent from the insertion sort are sent to
-     * swap with each other.
-     * Complexity is 1.
+     * Swap function.
+     * Time Complexity is 1.
      *
      * @param      array  The array
      * @param      i      { parameter_description }
@@ -126,10 +121,10 @@ class Sort {
     /**
      * Less function compares the two strings.
      *
-     * @param      a     { parameter_description }
-     * @param      b     { parameter_description }
+     * @param      a     a is compared with b.
+     * @param      b     b is one element.
      *
-     * @return     { description_of_the_return_value }
+     * @return     boolean value.
      */
     public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
@@ -138,7 +133,7 @@ class Sort {
     /**
      * Returns a string representation of the object.
      *
-     * @param      a     { parameter_description }
+     * @param      a     object.
      *
      * @return     String representation of the object.
      */
