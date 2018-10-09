@@ -19,7 +19,7 @@ class MinHeap<E extends Comparable<E>> {
     }
     /**
      * Determines if minimum heap.
-     *
+     *time complexity is O(1).
      * @param      arr1  The arr 1.
      *
      * @return     True if minimum heap, False otherwise.
@@ -37,7 +37,7 @@ class MinHeap<E extends Comparable<E>> {
      *
      * @param      i     i parameter.
      * @param      j     j parameter.
-     *
+     * time complexity is O(1).
      * @return     boolean value.
      */
     public boolean less(final E i, final E j) {
@@ -100,7 +100,6 @@ public class Solution {
                     floarr[j] = Float.parseFloat(tokens[j]);
                 }
                 MinHeap<Float> m = new MinHeap<Float>(floarr);
-                //int len = floarr.length;
                 System.out.println(m.isMinHeap(floarr));
             }
             }
