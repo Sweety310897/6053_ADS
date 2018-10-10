@@ -178,10 +178,8 @@ class Details {
     }
     /**
      * prints.
-     *  Best case: O(1)
-     *  worst case: O(1)
-     *  Average case: O(1)
-     * @return     { description_of_the_return_value }
+     * Time complexity: O(1)
+     * @return     return value.
      */
     String print() {
         return this.getname() + "," + this.gettotal() + ","
@@ -203,8 +201,8 @@ class Heapsort {
     /**
      * Constructs the object.
      *
-     * @param      a     { parameter_description }
-     * @param      n     { parameter_description }
+     * @param      a     a
+     * @param      n     n
      */
     Heapsort(final Details[] a, final int n) {
         array = a;
@@ -212,10 +210,8 @@ class Heapsort {
     }
     /**
      * sorts.
-     * Best case: O(N)
-     *  worst case: O(N)
-     *  Average case: O(N)
-     * @return     { description_of_the_return_value }
+     *  Time complexity: O(N)
+     * @return     details array.
      */
     Details[] sort() {
         for (int i = (size / 2) - 1; i >= 0; i--) {
@@ -242,9 +238,7 @@ class Heapsort {
     }
     /**
      * heapifies.
-     *  Best case: O(logN)
-     *  worst case: O(logN)
-     *  Average case: O(logN)
+     * Time complexity: O(logN)
      * @param      n     { parameter_description }
      * @param      i     { parameter_description }
      */
@@ -266,23 +260,18 @@ class Heapsort {
     /**
      * gets item.
      *
-     * Best case: O(1)
-     *  worst case: O(1)
-     *  Average case: O(1)
+     * Time complexity: O(1)
      * @param      index  The index
      *
-     * @return     { description_of_the_return_value }
+     * @return     item.
      */
     Details getitem(final int index) {
         return array[index];
     }
     /**
      * get size.
-     *
-     * Best case: O(1)
-     *  worst case: O(1)
-     *  Average case: O(1)
-     * @return     { description_of_the_return_value }
+     *  Time complexity: O(1)
+     * @return     size.
      */
     int getsize() {
         return size;
@@ -306,7 +295,7 @@ final class Solution {
      * Best case: O(1)
      *  worst case: O(N)
      *  Average case: O(N)
-     * @return     { description_of_the_return_value }
+     * @return     boolean value.
      */
     static boolean contains(final int[] arr, final int val) {
         for (int n : arr) {
