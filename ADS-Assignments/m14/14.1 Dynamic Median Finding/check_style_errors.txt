@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:9:22: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m14\14.1 Dynamic Median Finding\Solution.java:39: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
