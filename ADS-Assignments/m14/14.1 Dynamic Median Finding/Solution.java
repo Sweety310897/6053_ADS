@@ -1,11 +1,20 @@
 import java.util.Scanner;
-public class Solution {
-
+/**
+ * Solution.
+ */
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution () {
-
+        //constructor.
     }
-
-    public static void main(String[] args) {
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
 
