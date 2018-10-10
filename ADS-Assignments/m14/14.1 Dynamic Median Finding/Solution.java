@@ -16,13 +16,13 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
+        int number = scan.nextInt();
 
-        MinPQ<Float> minpq = new MinPQ<Float>(n);
-        MaxPQ<Float> maxpq = new MaxPQ<Float>(n);
+        MinPQ<Float> minpq = new MinPQ<Float>(number);
+        MaxPQ<Float> maxpq = new MaxPQ<Float>(number);
 
         Float median = 0.0f;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < number; i++) {
             Float val = scan.nextFloat();
             if (val > median) {
                 minpq.insert(val);
