@@ -7,10 +7,15 @@ public final class Solution {
     private Solution() {
         //constructor.
     }
-    public static void main(String[] args) {
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        BinarySearchST<String, Integer> b = new BinarySearchST<String, Integer>();
-
+        BinarySearchST<String, Integer> b =
+        new BinarySearchST<String, Integer>();
         String[] tokens = scan.nextLine().split(" ");
         b = new BinarySearchST<String, Integer>(tokens.length);
         for (int i = 0; i < tokens.length; i++) {
@@ -18,7 +23,7 @@ public final class Solution {
         }
         while (scan.hasNextLine()) {
             String[] temp = scan.nextLine().split(" ");
-            switch(temp[0]) {
+            switch (temp[0]) {
             case "max" :
             System.out.println(b.max());
             break;
@@ -43,10 +48,11 @@ public final class Solution {
             case "get":
             System.out.println(b.get(temp[1]));
             break;
+            default:
+            break;
 
             }
 
         }
-        
     }
 }
