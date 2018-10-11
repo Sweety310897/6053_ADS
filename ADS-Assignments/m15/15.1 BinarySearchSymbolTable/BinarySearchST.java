@@ -1,5 +1,11 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+/**
+ * Class for binary search st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class BinarySearchST<Key extends Comparable<Key>, Value> {
     private static final int INIT_CAPACITY = 2;
     private Key[] keys;
@@ -21,7 +27,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         keys = (Key[]) new Comparable[capacity]; 
         vals = (Value[]) new Object[capacity]; 
     }   
-
+     // timecomplexity - O(n)
     // resize the underlying arrays
     private void resize(int capacity) {
         assert capacity >= n;
@@ -34,7 +40,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         vals = tempv;
         keys = tempk;
     }
-
+     // timecomplexity - O(1)
     /**
      * Returns the number of key-value pairs in this symbol table.
      *
@@ -43,7 +49,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     public int size() {
         return n;
     }
-
+     // timecomplexity - O(1)
     /**
      * Returns true if this symbol table is empty.
      *
@@ -54,7 +60,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         return size() == 0;
     }
 
-
+     // timecomplexity - O(1)
     /**
      * Does this symbol table contain the given key?
      *
@@ -112,9 +118,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         } 
         return lo;
     } 
-
-
-
+     // timecomplexity - O(n)
     /**
      * Inserts the specified key-value pair into the symbol table, overwriting the old 
      * value with the new value if the symbol table already contains the specified key.
@@ -156,7 +160,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
         assert check();
     } 
-
+     // timecomplexity - O(n)
     /**
      * Removes the specified key and associated value from this symbol table
      * (if the key is in the symbol table).
@@ -193,7 +197,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 
         assert check();
     } 
-
+     // timecomplexity - O(1)
     /**
      * Removes the smallest key and associated value from this symbol table.
      *
@@ -206,7 +210,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         delete(min());
     }
-
+     // timecomplexity - O(1)
     /**
      * Removes the largest key and associated value from this symbol table.
      *
@@ -224,7 +228,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
    /***************************************************************************
     *  Ordered symbol table methods.
     ***************************************************************************/
-
+    // timecomplexity - O(1)
    /**
      * Returns the smallest key in this symbol table.
      *
@@ -238,7 +242,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         return keys[0]; 
     }
-
+    // timecomplexity - O(1)
     /**
      * Returns the largest key in this symbol table.
      *
@@ -252,7 +256,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         return keys[n-1];
     }
-
+    // timecomplexity - O(1)
     /**
      * Return the kth smallest key in this symbol table.
      *
@@ -268,7 +272,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         return keys[k];
     }
-
+    // timecomplexity - O(n)
     /**
      * Returns the largest key in this symbol table less than or equal to {@code key}.
      *
@@ -287,7 +291,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (i == 0) return null;
         else return keys[i-1];
     }
-
+    // // timecomplexity - O(n)
     /**
      * Returns the smallest key in this symbol table greater than or equal to {@code key}.
      *
@@ -330,7 +334,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     // public void deleteMin() {
     //     delete(min());
     // }
-
+    //timecomplexity - O(n)
     public ArrayList<String> keys(Key low, Key high) {
         if (low == null) {
             throw new IllegalArgumentException("first argument to keys() is null"); 
@@ -421,12 +425,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
    /***************************************************************************
     *  Check internal invariants.
     ***************************************************************************/
-
+    // timecomplexity - O(n^2)
     private boolean check() {
         return isSorted() && rankCheck();
     }
 
     // are the items in the array in ascending order?
+    // timecomplexity - O(n)
     private boolean isSorted() {
         for (int i = 1; i < size(); i++)
             if (keys[i].compareTo(keys[i-1]) < 0) return false;
@@ -434,6 +439,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     // check that rank(select(i)) = i
+    // timecomplexity - O(n)
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++)
             if (i != rank(select(i))) return false;

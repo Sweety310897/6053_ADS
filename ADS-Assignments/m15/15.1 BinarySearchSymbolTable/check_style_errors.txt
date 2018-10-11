@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 2 errors.

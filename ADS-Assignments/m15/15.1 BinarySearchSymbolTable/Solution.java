@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+/**
+ * class.
+ */
 public final class Solution {
     /**
      * Constructs the object.
@@ -56,3 +59,8 @@ public final class Solution {
         }
     }
 }
+
+
+
+
+
