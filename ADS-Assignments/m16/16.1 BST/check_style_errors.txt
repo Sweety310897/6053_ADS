@@ -94,10 +94,12 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:107:87: '3' is a magic number. [MagicNumber]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:107:91: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:107:115: '4' is a magic number. [MagicNumber]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110: Line is longer than 80 characters (found 99). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110:77: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110:87: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110:94: '3' is a magic number. [MagicNumber]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:115: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110:74: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110:84: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:110:91: '3' is a magic number. [MagicNumber]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:113:34: 'else' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:113:34: '}' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m16\16.1 BST\Solution.java:120: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 100 errors.
+Checkstyle ends with 102 errors.

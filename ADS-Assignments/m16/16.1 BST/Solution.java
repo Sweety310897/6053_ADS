@@ -107,7 +107,12 @@ public class Solution {
 				case "put": b.put(new Book(tokens[1],tokens[2],tokens[3]),Integer.parseInt(tokens[4]));
 				break;
 				case "get":
-				System.out.println(b.get(new Book(tokens[1],tokens[2],tokens[3])));
+				Integer trail = b.get(new Book(tokens[1],tokens[2],tokens[3]));
+				if (trail == null) {
+					System.out.println("null");
+				}else {
+					System.out.println(trail);
+				}
 				break;
 				default:
 				break;
