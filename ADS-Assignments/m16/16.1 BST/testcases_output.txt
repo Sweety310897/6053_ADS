@@ -1,33 +1,26 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 1
 Your Output: 
-Algorithms
-0
+1
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 6
 5
 7
 2
 Your Output: 
-Street
-null
-Hello
-null
-Hello
-null
-IT
-null
+6
+5
+7
+2
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 null
 7
 Your Output: 
-Hello
 null
-Hello
-null
+7
 ----------------------------------------
