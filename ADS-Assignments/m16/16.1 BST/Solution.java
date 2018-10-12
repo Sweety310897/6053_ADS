@@ -139,7 +139,7 @@ final class Solution {
 // }
 // public class Solution {
 //  public static void main(String[] args) {
-//      Scanner scan = new Scanner(System.in);    
+//      Scanner scan = new Scanner(System.in);
 //      BinarySearchTree b = new BinarySearchTree();
 //      Book book = new Book();
 //      while(scan.hasNext()) {
