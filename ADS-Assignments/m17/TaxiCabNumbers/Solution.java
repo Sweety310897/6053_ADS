@@ -18,8 +18,8 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()) {
             String[] input = sc.nextLine().split(" ");
-            int N = Integer.parseInt(input[0]);
-            int M = Integer.parseInt(input[1]);
+            int nth = Integer.parseInt(input[0]);
+            int mth = Integer.parseInt(input[1]);
             final int n = 1000;
             MinPQ<Cubesum> pq = new MinPQ<Cubesum>();
                 for (int i = 1; i <= n; i++) {
@@ -32,10 +32,10 @@ public final class Solution {
                 Cubesum curr = pq.delMin();
                 if (prev.getsum() == curr.getsum()) {
                     pair++;
-                    if (pair == M) {
-                        pairCount = pairCount+1;
+                    if (pair == mth) {
+                        pairCount = pairCount + 1;
                     }
-                    if (pairCount == N) {
+                    if (pairCount == nth) {
                         System.out.println(prev.getsum());
                         break;
                     }
