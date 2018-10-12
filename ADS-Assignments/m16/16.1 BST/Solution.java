@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * Class for solution.
  */
@@ -8,7 +7,7 @@ final class Solution {
      * Constructs the object.
      */
     protected Solution() {
-
+    	//constructor.
     }
     /**
      * Main function.
@@ -21,7 +20,6 @@ final class Solution {
         while (sc.hasNext()) {
             String[] line = sc.nextLine().split(",");
             switch (line[0]) {
-                // Node ne = new Node(old);
                 case "put":
                 Book old = new Book(line[1], line[2],
                  Float.parseFloat(line[1 + 2]));
@@ -31,12 +29,7 @@ final class Solution {
                 Book old1 = new Book(line[1], line[2],
                  Float.parseFloat(line[1 + 2]));
                 Integer c = bt.get(old1);
-                // if(c == null){
-                //  System.out.println("null");
-                // }
-                    System.out.println(c);
-                // else{
-                // }
+                System.out.println(c);
                 break;
                 default:
                 break;
@@ -44,7 +37,6 @@ final class Solution {
         }
     }
 }
-
 // import java.util.Scanner;
 // class Node {
 // 	Book key;
