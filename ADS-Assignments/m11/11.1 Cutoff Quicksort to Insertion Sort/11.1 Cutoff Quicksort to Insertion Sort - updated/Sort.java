@@ -11,7 +11,7 @@ class Sort {
     /**
      * Partition function.
      * This is used to partion the array into two halves.
-     * The time complexity  is N^2.
+     * The time complexity  is N.
      * There are two while loops and each time takes N times of execution.
      *
      * @param      array  The array
@@ -52,7 +52,7 @@ class Sort {
     /**
      * Quick sort.
      * If number of values in the array are less than 7.
-     * The complexity of the function is 1.
+     * The time complexity of the function is logN.
      *
      * @param      array   The array
      * @param      low     The low
@@ -74,7 +74,7 @@ class Sort {
     }
 
     /**
-     * The complexity  of the function is 1.
+     * The complexity  of the function is O(1).
      *
      * @param      array   The array
      * @param      cutoff  The cutoff
@@ -87,7 +87,7 @@ class Sort {
     /**
      * Insertion sort function.
      * Here the given array is sorted based on the insertion sort.
-     * Complexity of insertion sort is N^2.
+     * Complexity of insertion sort is N.
      *
      * @param      array  The array
      * @param      low    The low
@@ -123,7 +123,7 @@ class Sort {
      *
      * @param      a     a is compared with b.
      * @param      b     b is one element.
-     *
+     * time complexity - O(1).
      * @return     boolean value.
      */
     public boolean less(final Comparable a, final Comparable b) {
