@@ -61,7 +61,7 @@ class BinarySearchTree {
 	public Integer get(Book ke) {
 		Node x = root;
 		while(x != null) {
-			int cmp = x.key.compareTo(ke);
+			Integer cmp = x.key.compareTo(ke);
 			if(cmp < 0) {
 				x = x.left;
 			}
