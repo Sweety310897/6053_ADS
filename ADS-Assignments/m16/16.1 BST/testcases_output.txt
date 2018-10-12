@@ -1,8 +1,9 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 1
 Your Output: 
-1
+Algorithms
+0
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -11,9 +12,13 @@ Expected Output:
 7
 2
 Your Output: 
+Street
 null
+Hello
 null
+Hello
 null
+IT
 null
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -21,6 +26,8 @@ Expected Output:
 null
 7
 Your Output: 
+Hello
 null
+Hello
 null
 ----------------------------------------

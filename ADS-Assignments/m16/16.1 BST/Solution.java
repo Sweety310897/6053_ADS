@@ -59,6 +59,8 @@ class BinarySearchTree {
 
 	Node root;
 	public Integer get(Book ke) {
+
+		System.out.println(ke.getName());
 		Node x = root;
 		while(x != null) {
 			Integer cmp = x.key.compareTo(ke);
@@ -69,7 +71,7 @@ class BinarySearchTree {
 				x = x.right;
 			}
 			else {
-				return x.value;
+				return x.key.getQuantity();
 			}
 
 		}
