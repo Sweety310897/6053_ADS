@@ -3,9 +3,18 @@ import java.util.Scanner;
  * Class for cubesum.
  */
 class Cubesum implements Comparable<Cubesum> {
+    /**
+     * i variable.
+     */
     private int i;
+    /**
+     * j variable.
+     */
     private int j;
-    long sum;
+    /**
+     * sum variable.
+     */
+    private long sum;
     /**
      * Constructs the object.
      *
@@ -34,11 +43,24 @@ class Cubesum implements Comparable<Cubesum> {
             return  0;
         }
     }
+    /**
+     * get i functio.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int geti() {
         return this.i;
     }
+    /**
+     * getj function.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getj() {
         return this.j;
+    }
+    public long getsum() {
+        return this.sum;
     }
     /**
      * Returns a string representation of the object.
@@ -80,13 +102,13 @@ public final class Solution {
             int pairCount = 0;
             while (!pq.isEmpty()) {
                 Cubesum curr = pq.delMin();
-                if (prev.sum == curr.sum) {
+                if (prev.getsum() == curr.getsum()) {
                     pair++;
                     if (pair == M){
                         pairCount = pairCount+1;
                     }
                     if(pairCount == N){
-                        System.out.println(prev.sum);
+                        System.out.println(prev.getsum());
                         break;
                     }
                 } else {
