@@ -127,7 +127,7 @@ public class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Adds a new key to this priority queue.
-     *
+     * time complexity - O(n)
      * @param  x the key to add to this priority queue
      */
     public void insert(Key x) {
@@ -142,7 +142,7 @@ public class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Removes and returns a smallest key on this priority queue.
-     *
+     *time complexity - O(1)
      * @return a smallest key on this priority queue
      * @throws NoSuchElementException if this priority queue is empty
      */
@@ -161,14 +161,14 @@ public class MinPQ<Key> implements Iterable<Key> {
    /***************************************************************************
     * Helper functions to restore the heap invariant.
     ***************************************************************************/
-
+    //time complexity - O(logn)
     private void swim(int k) {
         while (k > 1 && greater(k/2, k)) {
             exch(k, k/2);
             k = k/2;
         }
     }
-
+    //time complexity - O(logn)
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;
@@ -190,7 +190,7 @@ public class MinPQ<Key> implements Iterable<Key> {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
-
+    //time complexity - O(1)
     private void exch(int i, int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
