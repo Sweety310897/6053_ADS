@@ -7,8 +7,14 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:7:47: '6' is a magic number. [MagicNumber]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:12:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:33: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:50: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:9:52: '1000' is a magic number. [MagicNumber]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:10:52: '1000' is a magic number. [MagicNumber]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:13:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:48:12: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:48:28: '30' is a magic number. [MagicNumber]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:49: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:49:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:52:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m18\Week-3_Assignment-1\Solution.java:52:36: '10' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 17 errors.
