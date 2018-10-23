@@ -93,11 +93,11 @@ class BinarySearchTree {
          */
         private int size;
         /**
-         * { var_description }.
+         * node left.
          */
         private Node left;
         /**
-         * { var_description }.
+         * node right.
          */
         private Node right;
         /**
@@ -134,11 +134,11 @@ class BinarySearchTree {
         return size(root);
     }
     /**
-     * { function_description }.
-     *
+     * size function.
+     *timecomplexity  - O(n) for worst case.
      * @param      x     { parameter_description }
      *
-     * @return     { description_of_the_return_value }
+     * @return     size value.
      */
     private int size(final Node x) {
         if (x == null) {
@@ -149,7 +149,7 @@ class BinarySearchTree {
     }
     /**
      * { function_description }.
-     *
+     *timecomplexity  - O(n) for worst case.
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
@@ -178,13 +178,13 @@ class BinarySearchTree {
         root = put(root, key, val);
     }
     /**
-     * { function_description }.
-     *
+     * put method.
+     *timecomplexity  - O(n) for worst case.
      * @param      x     { parameter_description }
      * @param      key   The key
      * @param      val   The value
      *
-     * @return     { description_of_the_return_value }
+     * @return     Node.
      */
     private Node put(final Node x, final Book key, final int val) {
         if (x == null) {
@@ -201,19 +201,19 @@ class BinarySearchTree {
         return x;
     }
     /**
-     * { function_description }.
-     *
+     * max function.
+     *timecomplexity  - O(n) for worst case.
      * @return     { description_of_the_return_value }
      */
     public Book max() {
         return max(root).key;
     }
     /**
-     * { function_description }.
+     * max function.
      *
-     * @param      x     { parameter_description }
+     * @param      x     Node x.
      *
-     * @return     { description_of_the_return_value }
+     * @return     max value.
      */
     private Node max(final Node x) {
         if (x.right == null) {
@@ -223,19 +223,19 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }.
+     * min function.
      *
-     * @return     { description_of_the_return_value }
+     * @return     min value.
      */
     public Book min() {
         return min(root).key;
     }
     /**
-     * { function_description }.
+     * min function.
+     *timecomplexity  - O(n) for worst case.
+     * @param      x     Node x.
      *
-     * @param      x     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @return     min value.
      */
     private Node min(final Node x) {
         if (x.left == null) {
@@ -245,11 +245,11 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }.
+     * ceil function.
      *
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     ceil.
      */
     public Book ceil(final Book key) {
         Node x = ceil(root, key);
@@ -260,12 +260,12 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
+     * ceil function.
+     *timecomplexity  - O(n) for worst case.
+     * @param      x     Node x.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     ceil value.
      */
     private Node ceil(final Node x, final Book key) {
         if (x == null) {
@@ -286,11 +286,11 @@ class BinarySearchTree {
         return ceil(x.right, key);
     }
     /**
-     * { function_description }.
-     *
+     * floor function.
+     *timecomplexity  - O(n) for worst case.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     floor value.
      */
     public Book floor(final Book key) {
         Node x = floor(root, key);
@@ -301,12 +301,12 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }.
-     *
-     * @param      x     { parameter_description }
+     * floor function.
+     * timecomplexity  - O(n) for worst case.
+     * @param      x     Node x.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     Node floor.
      */
     private Node floor(final Node x, final Book key) {
         if (x == null) {
@@ -327,23 +327,23 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }.
+     * select function.
      *
-     * @param      k     { parameter_description }
+     * @param      k     k int type.
      *
-     * @return     { description_of_the_return_value }
+     * @return     k value.
      */
     public Book select(final int k) {
         Node x = select(root, k);
         return x.key;
     }
     /**
-     * { function_description }.
+     * select function.
+     * timecomplexity  - O(n) for worst case.
+     * @param      x     node x.
+     * @param      k     int k
      *
-     * @param      x     { parameter_description }
-     * @param      k     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @return     value.
      */
     private Node select(final Node x, final int k) {
         if (x == null) {
@@ -358,22 +358,6 @@ class BinarySearchTree {
             return x;
         }
     }
-    // public int rank(Book key) {
-    //     return rank(key, root);
-    // }
-    // private int rank(Book key, Node x) {
-    //     if (x == null) {
-    //         return 0;
-    //     }
-    //     int comp = key.compareTo(x.key);
-    //     if (comp < 0) {
-    //         return rank(key, x.left);
-    //     } else if (comp > 0) {
-    //         return 1 + size(x.left) + rank(key, x.right);
-    //     } else {
-    //         return size(x.left);
-    //     }
-    // }
 }
 /**
  * solution class.
@@ -397,7 +381,7 @@ public final class Solution {
             switch (tokens[0]) {
             case "put":
                 Book obj = new Book(tokens[1],
-                tokens[2], Float.parseFloat(tokens[2 + 1]));
+                    tokens[2], Float.parseFloat(tokens[2 + 1]));
                 bst.put(obj, Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
