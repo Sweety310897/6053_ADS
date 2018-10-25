@@ -9,11 +9,11 @@ public class Solution {
         int n = s.nextInt();
         String magazine[] = new String[m];
         for(int magazine_i=0; magazine_i < m; magazine_i++){
-            magazine[magazine_i] = s.nextLine();
+            magazine[magazine_i] = s.next();
         }
         String ransom[] = new String[n];
         for(int ransom_i=0; ransom_i < n; ransom_i++){
-            ransom[ransom_i] = s.nextLine();
+            ransom[ransom_i] = s.next();
         }
 
         if(getRansom(m,n,magazine,ransom))
