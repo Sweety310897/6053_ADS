@@ -1,6 +1,7 @@
 import java.util.Scanner;
-import java.io.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 /**
  * Class for solution.
  */
