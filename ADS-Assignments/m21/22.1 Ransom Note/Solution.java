@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.io.*;
 import java.util.*;
-//Arrays.stream(magazine).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 public class Solution {
 
     public static void main(String[] args) throws Exception{
@@ -10,11 +9,11 @@ public class Solution {
         int n = s.nextInt();
         String magazine[] = new String[m];
         for(int magazine_i=0; magazine_i < m; magazine_i++){
-            magazine[magazine_i] = s.next();
+            magazine[magazine_i] = s.nextLine();
         }
         String ransom[] = new String[n];
         for(int ransom_i=0; ransom_i < n; ransom_i++){
-            ransom[ransom_i] = s.next();
+            ransom[ransom_i] = s.nextLine();
         }
 
         if(getRansom(m,n,magazine,ransom))
