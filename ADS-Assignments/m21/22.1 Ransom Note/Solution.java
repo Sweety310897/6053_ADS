@@ -30,7 +30,7 @@ public final class Solution {
         for (int i = 0; i < n; i++) {
             ransom[i] = s.next();
         }
-        if (getRansom(m,n,magazine,ransom)) {
+        if (getRansom(m, n, magazine, ransom)) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
@@ -48,8 +48,9 @@ public final class Solution {
      */
     private static boolean getRansom(final int m, final int n,
         final String[] magazine, final String[] ransom) {
-        if (m < n)
+        if (m < n) {
             return false;
+        }
         Map<String, Long> magazineMap = getFrequencyMapFromArray(magazine);
         Map<String, Long> ransomMap =  getFrequencyMapFromArray(ransom);
         // System.out.println(magazineMap);
@@ -71,13 +72,15 @@ public final class Solution {
      *
      * @return     The frequency map from array.
      */
-    private static Map<String, Long> getFrequencyMapFromArray(final String[] arr) {
+    private static Map<String, Long> getFrequencyMapFromArray(
+        final String[] arr) {
         Map<String, Long> map = new HashMap<>();
-        for(String key : arr){
-            if(map.containsKey(key))
-                map.put(key, map.get(key)+1);
-            else
+        for (String key : arr) {
+            if (map.containsKey(key)) {
+                map.put(key, map.get(key) + 1);
+            } else {
                 map.put(key, new Long("1"));
+            }
         }
         return map;
     }
