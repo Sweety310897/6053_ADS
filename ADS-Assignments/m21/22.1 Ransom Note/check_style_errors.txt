@@ -1,5 +1,4 @@
 Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
