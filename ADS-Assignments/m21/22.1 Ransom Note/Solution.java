@@ -20,15 +20,15 @@ public final class Solution {
      */
     public static void main(final String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
-        int m = s.nextInt();//6
-        int n = s.nextInt();//4
-        String magazine[] = new String[m];
-        for (int magazine_i = 0; magazine_i < m; magazine_i++) {
-            magazine[magazine_i] = s.next();
+        int m = s.nextInt();
+        int n = s.nextInt();
+        String[] magazine = new String[m];
+        for (int i = 0; i < m; i++) {
+            magazine[i] = s.next();
         }
-        String ransom[] = new String[n];
-        for (int ransom_i = 0; ransom_i < n; ransom_i++) {
-            ransom[ransom_i] = s.next();
+        String[] ransom = new String[n];
+        for (int i = 0; i < n; i++) {
+            ransom[i] = s.next();
         }
         if (getRansom(m,n,magazine,ransom)) {
             System.out.println("Yes");
@@ -48,17 +48,19 @@ public final class Solution {
      */
     private static boolean getRansom(final int m, final int n,
         final String[] magazine, final String[] ransom) {
-        if(m < n)
+        if (m < n)
             return false;
         Map<String, Long> magazineMap = getFrequencyMapFromArray(magazine);
         Map<String, Long> ransomMap =  getFrequencyMapFromArray(ransom);
         // System.out.println(magazineMap);
         // System.out.println(ransomMap);
-        for(String key : ransomMap.keySet()){
-            if(!magazineMap.containsKey(key))
+        for (String key : ransomMap.keySet()) {
+            if (!magazineMap.containsKey(key)) {
                 return false;
-            if(magazineMap.get(key) < ransomMap.get(key))
+            }
+            if (magazineMap.get(key) < ransomMap.get(key)) {
                 return false;
+            }
         }
         return true;
     }
