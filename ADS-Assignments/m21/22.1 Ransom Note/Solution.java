@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -12,28 +12,29 @@ public class Solution {
         //constructor.
     }
     /**
-     * main function
+     * main function.
      *
      * @param      args       The arguments
      *
      * @throws     Exception  { exception_description }
      */
-    public static void main(final String[] args) throws Exception{
+    public static void main(final String[] args) throws Exception {
         Scanner s = new Scanner(System.in);
         int m = s.nextInt();//6
         int n = s.nextInt();//4
         String magazine[] = new String[m];
-        for(int magazine_i=0; magazine_i < m; magazine_i++){
+        for (int magazine_i = 0; magazine_i < m; magazine_i++) {
             magazine[magazine_i] = s.next();
         }
         String ransom[] = new String[n];
-        for(int ransom_i=0; ransom_i < n; ransom_i++){
+        for (int ransom_i = 0; ransom_i < n; ransom_i++) {
             ransom[ransom_i] = s.next();
         }
-        if(getRansom(m,n,magazine,ransom))
+        if (getRansom(m,n,magazine,ransom)) {
             System.out.println("Yes");
-        else
+        } else {
             System.out.println("No");
+        }
     }
     /**
      * Gets the ransom.
