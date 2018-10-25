@@ -18,7 +18,7 @@ public final class Solution {
      *
      * @throws     Exception  { exception_description }
      */
-    public static void main(final String[] args) throws Exception {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         int m = s.nextInt();
         int n = s.nextInt();
