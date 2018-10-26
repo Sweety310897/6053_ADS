@@ -232,12 +232,13 @@ public class Solution {
 				// print keys
 				// for (String s1 : l.keys()) 
 				// System.out.println("{" + s1 + ":" + l.get(s1) + "}"); 
-    			String str = "";
-    			for(String s1: l.keys()) {
     				if(l.keys() == null) {
     				System.out.println("{}");
     				return;
     			}
+    			String str = "";
+    			for(String s1: l.keys()) {
+
     				str += s1 + ":" + l.get(s1) + ", ";
     			}
     			
