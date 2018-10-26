@@ -236,7 +236,7 @@ public class Solution {
     				if(l.size() == 0) {
 
     				System.out.println("{}");
-    				return;
+    		
     			} else {
     				String str = "";
     			for(String s1: l.keys()) {
