@@ -235,15 +235,17 @@ public class Solution {
     				if(l.keys() == null) {
     				System.out.println("{}");
     				return;
-    			}
-    			String str = "";
+    			} else {
+    				String str = "";
     			for(String s1: l.keys()) {
 
     				str += s1 + ":" + l.get(s1) + ", ";
     			}
     			
     			System.out.println("{" + str.substring(0, str.length() - 2) + "}");
-				break;
+					
+    			}
+    			break;
 				case "delete":
 				l.delete(temp[1]);
 				break;

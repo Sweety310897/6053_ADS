@@ -68,17 +68,18 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:222:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:222:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:225: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:226:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:226:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:228: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:228:31: 'switch' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:229: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:233: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:234: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:234: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:235:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:240:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:235:35: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:240:28: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:244: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:245: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:252: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:246: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:254: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 81 errors.
+Checkstyle ends with 82 errors.
