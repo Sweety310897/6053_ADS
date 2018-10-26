@@ -43,7 +43,7 @@ public final class Solution {
      * @param      n         { parameter_description }
      * @param      str1  str1
      * @param      str2    str2
-     *
+     *time complexity - O(n).
      * @return     The ransom.
      */
     private static boolean getRansom(final int m, final int n,
@@ -67,7 +67,7 @@ public final class Solution {
     }
     /**
      * Gets the frequency map from array.
-     *
+     * time complexity - O(n).
      * @param      arr   The arr
      *
      * @return     The frequency map from array.
@@ -85,3 +85,15 @@ public final class Solution {
         return map;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
