@@ -1,8 +1,4 @@
 Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:44:8: Unused @param tag for 'magazine'. [JavadocMethod]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:45:8: Unused @param tag for 'ransom'. [JavadocMethod]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:50:24: Expected @param tag for 'str1'. [JavadocMethod]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m21\22.1 Ransom Note\Solution.java:50:45: Expected @param tag for 'str2'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.

@@ -41,8 +41,8 @@ public final class Solution {
      *
      * @param      m         { parameter_description }
      * @param      n         { parameter_description }
-     * @param      magazine  The magazine
-     * @param      ransom    The ransom
+     * @param      str1  str1
+     * @param      str2    str2
      *
      * @return     The ransom.
      */
