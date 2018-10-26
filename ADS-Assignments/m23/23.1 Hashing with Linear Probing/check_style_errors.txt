@@ -1,14 +1,6 @@
 Starting audit...
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:20: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:21:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:23:31: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:24: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:28: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:29: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:29: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:31:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:34: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:25: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:28:35: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 3 errors.
