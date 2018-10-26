@@ -236,6 +236,9 @@ public class Solution {
     			for(String s1: l.keys()) {
     				str += s1 + ":" + l.get(s1) + ", ";
     			}
+    			if(l.keys() == null) {
+    				System.out.println("{}");
+    			}
     			System.out.println("{" + str.substring(0, str.length() - 2) + "}");
 				break;
 				case "delete":
