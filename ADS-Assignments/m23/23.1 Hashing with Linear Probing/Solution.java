@@ -232,8 +232,8 @@ public class Solution {
 				// print keys
 				// for (String s1 : l.keys()) 
 				// System.out.println("{" + s1 + ":" + l.get(s1) + "}"); 
-    				System.out.println(l.keys() + "keys");
-    				if(l.keys() == null) {
+    				//System.out.println(l.keys() + "keys");
+    				if(l.size() == 0) {
 
     				System.out.println("{}");
     				return;
