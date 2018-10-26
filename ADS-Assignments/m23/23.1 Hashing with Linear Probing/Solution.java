@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class LinearProbingHashST<Key, Value> {
-    private static final int INIT_CAPACITY = 4;
+    private static final int INIT_CAPACITY = 1;
 
     private int n;           // number of key-value pairs in the symbol table
     private int m;           // size of linear probing table
@@ -61,7 +61,8 @@ class LinearProbingHashST<Key, Value> {
 
     // hash function for keys - returns value between 0 and M-1
     private int hash(Key key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        // return (key.hashCode() & 0x7fffffff) % m;
+        return (key.hashCode() * 11) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
@@ -220,17 +221,21 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int range = s.nextInt();
-		LinearProbingHashST<String, Integer> l = new LinearProbingHashST<String, Integer>();
-		for(int i = 0; i < range; i++) {
+		LinearProbingHashST<String, Integer> l = new LinearProbingHashST<>();
+		for(int i = 0; i <= range; i++) {
 			String[] temp = s.nextLine().split(" ");
 			switch(temp[0]) {
 				case "put": l.put(temp[1], Integer.parseInt(temp[2]));
 				break;
 				case "display":
 				// print keys
-				for (String s1 : l.keys()) 
-				System.out.println(s1 + " " + l.get(s1)); 
-    
+				// for (String s1 : l.keys()) 
+				// System.out.println("{" + s1 + ":" + l.get(s1) + "}"); 
+    			String str = "";
+    			for(String s1: l.keys()) {
+    				str += s1 + ":" + l.get(s1) + ", ";
+    			}
+    			System.out.println("{" + str.substring(0, str.length() - 2) + "}");
 				break;
 				case "delete":
 				l.delete(temp[1]);
