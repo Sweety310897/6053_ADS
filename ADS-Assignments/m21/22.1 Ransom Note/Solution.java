@@ -22,15 +22,15 @@ public final class Solution {
         Scanner s = new Scanner(System.in);
         int m = s.nextInt();
         int n = s.nextInt();
-        String[] magazine = new String[m];
+        String[] str1 = new String[m];
         for (int i = 0; i < m; i++) {
-            magazine[i] = s.next();
+            str1[i] = s.next();
         }
-        String[] ransom = new String[n];
+        String[] str2 = new String[n];
         for (int i = 0; i < n; i++) {
-            ransom[i] = s.next();
+            str2[i] = s.next();
         }
-        if (getRansom(m, n, magazine, ransom)) {
+        if (getRansom(m, n, str1, str2)) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
@@ -47,12 +47,12 @@ public final class Solution {
      * @return     The ransom.
      */
     private static boolean getRansom(final int m, final int n,
-        final String[] magazine, final String[] ransom) {
+        final String[] str1, final String[] str2) {
         if (m < n) {
             return false;
         }
-        Map<String, Long> magazineMap = getFrequencyMapFromArray(magazine);
-        Map<String, Long> ransomMap =  getFrequencyMapFromArray(ransom);
+        Map<String, Integer> magazineMap = getFrequencyMapFromArray(str1);
+        Map<String, Integer> ransomMap =  getFrequencyMapFromArray(str2);
         // System.out.println(magazineMap);
         // System.out.println(ransomMap);
         for (String key : ransomMap.keySet()) {
@@ -72,14 +72,14 @@ public final class Solution {
      *
      * @return     The frequency map from array.
      */
-    private static Map<String, Long> getFrequencyMapFromArray(
+    private static Map<String, Integer> getFrequencyMapFromArray(
         final String[] arr) {
-        Map<String, Long> map = new HashMap<>();
+        Map<String, Integer> map = new HashMap<>();
         for (String key : arr) {
             if (map.containsKey(key)) {
                 map.put(key, map.get(key) + 1);
             } else {
-                map.put(key, new Long("1"));
+                map.put(key, 1);
             }
         }
         return map;
