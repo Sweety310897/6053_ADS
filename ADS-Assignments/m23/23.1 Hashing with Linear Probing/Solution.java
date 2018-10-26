@@ -234,11 +234,13 @@ public class Solution {
 				// System.out.println("{" + s1 + ":" + l.get(s1) + "}"); 
     			String str = "";
     			for(String s1: l.keys()) {
+    				if(l.keys() == null) {
+    				System.out.println("{}");
+    				return;
+    			}
     				str += s1 + ":" + l.get(s1) + ", ";
     			}
-    			if(l.keys() == null) {
-    				System.out.println("{}");
-    			}
+    			
     			System.out.println("{" + str.substring(0, str.length() - 2) + "}");
 				break;
 				case "delete":
