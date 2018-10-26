@@ -1,6 +1,20 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor.
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int range = s.nextInt();
 		LinearProbingHashST<String, Integer> l = new LinearProbingHashST<>();
@@ -19,22 +33,22 @@ public class Solution {
     				System.out.println("{}");
     		
     			} else {
-    				String str = "";
-    			for(String s1: l.keys()) {
 
-    				str += s1 + ":" + l.get(s1) + ", ";
-    			}
-    			
-    			System.out.println("{" + str.substring(0, str.length() - 2) + "}");
-					
-    			}
+    				String str = "";
+    				for (String s1: l.keys()) {
+    					str += s1 + ":" + l.get(s1) + ", ";
+    				}
+    				System.out.println("{" + str.substring(
+    					0, str.length() - 2) + "}");
+				}
     			break;
 				case "delete":
 				l.delete(temp[1]);
 				break;
 				case "get":
 				System.out.println(l.get(temp[1]));
-				
+				break;
+				default:
 				break;
 			}
 		}
