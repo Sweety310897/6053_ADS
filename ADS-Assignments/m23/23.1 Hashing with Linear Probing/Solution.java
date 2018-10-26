@@ -236,7 +236,7 @@ public class Solution {
     			for(String s1: l.keys()) {
     				str += s1 + ":" + l.get(s1) + ", ";
     			}
-    			if(str == null) {
+    			if(str == " ") {
     				System.out.println("{}");
     			}
     			System.out.println("{" + str.substring(0, str.length() - 2) + "}");
