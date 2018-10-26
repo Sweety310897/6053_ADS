@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:25: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m23\23.1 Hashing with Linear Probing\Solution.java:28:35: 'if' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.
