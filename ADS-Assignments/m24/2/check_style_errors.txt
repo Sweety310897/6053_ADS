@@ -1,0 +1,16 @@
+Starting audit...
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:9:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:13:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:13:28: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:15: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:15:31: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:15:48: Must have at least one statement. [EmptyBlock]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:23: Missing a Javadoc comment. [JavadocType]
+Audit done.
+Checkstyle ends with 13 errors.
