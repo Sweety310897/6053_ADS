@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 /**
- * class.s
+ * class.
  */
 public final class Solution {
     /**

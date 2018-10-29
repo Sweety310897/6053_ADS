@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m20\updated modules\m15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m20\updated modules\m15\15.1 BinarySearchSymbolTable\Solution.java:3: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 2 errors.
