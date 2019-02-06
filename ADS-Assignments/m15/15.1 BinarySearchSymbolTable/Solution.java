@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 /**
- * class.
+ * class.s
  */
 public final class Solution {
     /**
@@ -17,10 +18,10 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        BinarySearchST<String, Integer> b =
-        new BinarySearchST<String, Integer>();
         String[] tokens = scan.nextLine().split(" ");
-        b = new BinarySearchST<String, Integer>(tokens.length);
+        BinarySearchST<String, Integer> b = new BinarySearchST<String, Integer>(tokens.length);
+        
+        // b = new BinarySearchST<String, Integer>(tokens.length);
         for (int i = 0; i < tokens.length; i++) {
             b.put(tokens[i], i);
         }
@@ -44,7 +45,9 @@ public final class Solution {
             break;
             case "keys":
             ArrayList<String> limit = b.keys();
+            // System.out.println(limit);
             for (int i = 0; i < limit.size(); i++) {
+                // System.out.println(limit.get(i) + "i");
                 System.out.println(limit.get(i) + " " + b.get(limit.get(i)));
             }
             break;
@@ -59,8 +62,3 @@ public final class Solution {
         }
     }
 }
-
-
-
-
-
