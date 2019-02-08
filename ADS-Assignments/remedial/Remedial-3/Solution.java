@@ -39,11 +39,7 @@ public class Solution {
 				// System.out.println(each);
 				String[] tempeach = each.split(" ");
 				double temppp = Double.parseDouble(tempeach[2]);
-				if(tempnum != temppp) {
-					System.out.println("mark");
-					break;
-				}
-				else if(tempnum == temppp) {
+				if(tempnum == temppp) {
 					// System.out.println("hi");
 					System.out.println(tempeach[0] + "," + tempeach[1] + "," +tempeach[2]);
 				}
