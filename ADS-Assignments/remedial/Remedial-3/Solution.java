@@ -39,15 +39,13 @@ public class Solution {
 				// System.out.println(each);
 				String[] tempeach = each.split(" ");
 				double temppp = Double.parseDouble(tempeach[2]);
-				try {
-					if(tempnum == temppp) {
+				if(tempnum != temppp) {
+					System.out.println("mark");
+				}
+				else if(tempnum == temppp) {
 					// System.out.println("hi");
 					System.out.println(tempeach[0] + "," + tempeach[1] + "," +tempeach[2]);
-				}	
-				} catch(Exception e) {
-					System.out.println("marks");
 				}
-				
 			}
 			// System.out.println(tempstored[j]);
 
