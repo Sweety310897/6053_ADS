@@ -58,7 +58,7 @@ class Sorting {
 	String display() {
 		String s = "";
 		for(int i = 0; i < size; i++) {
-			s += names[i].rollno + " " + names[i].name + " "+ names[i].marks + ",";
+			s += names[i].rollno + " " + names[i].name + " "+ names[i].marks + ".0,";
 
 		}
 		return s.substring(0, s.length() - 1);
