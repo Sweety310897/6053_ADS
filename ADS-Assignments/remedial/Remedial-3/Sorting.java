@@ -57,10 +57,13 @@ class Sorting {
 	//takes O(n) time complexity.
 	String display() {
 		String s = "";
+		// String[] temp = new String[100];
 		for(int i = 0; i < size; i++) {
-			s += names[i].rollno + "," + names[i].name + ","+ names[i].marks + ".0,";
+
+			s += names[i].rollno + " " + names[i].name + " "+ names[i].marks + ",";
 
 		}
+		// return temp;
 		return s.substring(0, s.length() - 1);
 	}
 	//takes O(n^2) time complexity.

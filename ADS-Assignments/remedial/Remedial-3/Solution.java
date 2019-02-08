@@ -17,8 +17,20 @@ public class Solution {
 		String tempsort = sort.display();	
 		// System.out.println(tempsort);
 		String[] tempstored = tempsort.split(",");
-		for(int j = 0; j < num;j++) {
-			System.out.println(tempstored[j]);
+		
+		// System.out.println(Arrays.toString(tempstored));
+
+		for(int j =0;j<num;j++) {
+			String tempval = tempstored[j];
+			String[] tempvalspace = tempval.split(" ");
+			String str1 = "";
+			for(int k =0;k<3;k++) {
+				str1 += tempvalspace[k] + ",";
+				
+			}
+			// System.out.println(str1);
+			System.out.println(str1.substring(0, str1.length() - 1));
+			// System.out.println(tempstored[j]);
 		}
         
 	}
