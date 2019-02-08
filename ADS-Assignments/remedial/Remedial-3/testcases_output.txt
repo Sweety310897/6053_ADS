@@ -11,29 +11,6 @@ mark
 mark
 mark
 mark
-mark
-mark
-mark
-1002,Bob,92.0
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-1003,Raju,93.0
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-1004,Shreya,94.0
-mark
-mark
-mark
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -48,33 +25,9 @@ Expected Output:
 Your Output: 
 mark
 mark
-mark
-1002,Bob,92.0
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-1010,Bob,97.0
-1007,Olive,97.0
 1001,Mark,91.0
 1008,Raju,91.0
 1009,Syed,91.0
-mark
-mark
-mark
-mark
-mark
-mark
 mark
 ----------------------------------------
 
@@ -83,13 +36,6 @@ Expected Output:
 This marks are not awarded to any student
 
 Your Output: 
-mark
-mark
-mark
-mark
-mark
-mark
-mark
 mark
 ----------------------------------------
 
@@ -111,16 +57,6 @@ Your Output:
 7,Manasa,99.0
 mark
 mark
-mark
-mark
-mark
-mark
-mark
-mark
-2,Murthy,99.9
-6,Murthy,99.9
-4,Rajesh,99.9
-8,Rajesh,99.9
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
@@ -152,24 +88,7 @@ This marks are not awarded to any student
 
 Your Output: 
 mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
 1010,Bob,90.0
-mark
-mark
-mark
-mark
-mark
-mark
-mark
-mark
 mark
 ----------------------------------------
 

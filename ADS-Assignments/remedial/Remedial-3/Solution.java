@@ -41,6 +41,7 @@ public class Solution {
 				double temppp = Double.parseDouble(tempeach[2]);
 				if(tempnum != temppp) {
 					System.out.println("mark");
+					break;
 				}
 				else if(tempnum == temppp) {
 					// System.out.println("hi");
