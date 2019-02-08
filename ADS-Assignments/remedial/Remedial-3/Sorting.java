@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
-class Student {
+class Student implements Comparable{
 	String name;
 	int rollno;
 	double marks;
@@ -19,14 +19,21 @@ class Student {
 	public Double getMarks() {
 		return this.marks;
 	}
-	public int compareTo(Student comp) {
+	// public int compareTo(final Object object) {
+ //        
+        
+ //    }
+	public int compareTo(final Object object) {
+		Student comp = (Student) object;
 		if(this.marks > comp.marks) {
 			return 1;
 		}
-		if(this.marks < comp.marks) {
+		else if(this.marks < comp.marks) {
 			return -1;
+		} else {
+			return this.name.compareTo(comp.name);
 		}
-		return 0;
+		// return 0;
 	}
 	
 }

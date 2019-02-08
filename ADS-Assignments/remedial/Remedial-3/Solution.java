@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.ArrayList;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -17,10 +18,19 @@ public class Solution {
 		String tempsort = sort.display();	
 		// System.out.println(tempsort);
 		String[] tempstored = tempsort.split(",");
-		
+	
+
 		// System.out.println(Arrays.toString(tempstored));
+		// for(int j = 0; j < num;j++) {
+			// String tempnum = scan.nextLine();
+			// System.out.println(tempnum);
+		// }
+
+
 
 		for(int j =0;j<num;j++) {
+			int tempnum = Integer.parseInt(scan.nextLine());
+			// System.out.println(tempnum);
 			String tempval = tempstored[j];
 			String[] tempvalspace = tempval.split(" ");
 			String str1 = "";
@@ -31,7 +41,7 @@ public class Solution {
 			// System.out.println(str1);
 			System.out.println(str1.substring(0, str1.length() - 1));
 			// System.out.println(tempstored[j]);
-		}
-        
+		
+     	}   
 	}
 }

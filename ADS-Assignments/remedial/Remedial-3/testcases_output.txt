@@ -23,8 +23,8 @@ Expected Output:
 
 Your Output: 
 1001,Mark,91.0
-1009,Syed,91.0
 1008,Raju,91.0
+1009,Syed,91.0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -32,7 +32,11 @@ Expected Output:
 This marks are not awarded to any student
 
 Your Output: 
-8,Rajesh,99.9
+Exception in thread "main" java.lang.NumberFormatException: For input string: "99.0"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -48,7 +52,11 @@ Expected Output:
 
 Your Output: 
 1,Deepak,99.0
-7,Manasa,99.0
+Exception in thread "main" java.lang.NumberFormatException: For input string: "99.9"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:32)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -101,7 +109,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at Sorting.add(Sorting.java:42)
-	at Solution.main(Solution.java:12)
+	at Sorting.add(Sorting.java:49)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
