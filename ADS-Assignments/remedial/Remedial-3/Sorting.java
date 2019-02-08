@@ -28,23 +28,46 @@ class Student implements Comparable{
  //    }
 	public int compareTo(final Object object) {
 		Student comp = (Student) object;
-		if(this.marks > comp.marks) {
-			return 1;
-		}
-		else if(this.marks < comp.marks) {
-			return -1;
-		} else if(this.rollno > comp.rollno) {
-				return 1;
-			}
-			else if(this.rollno < comp.rollno) {
-				return -1;
-			}
-		else {
-			return this.name.compareTo(comp.name);
-		} 
+		if (this.marks > comp.marks) {
+            return 1;
+        } else if (this.marks < comp.marks) {
+            return -1;
+        } else if(this.name.compareTo(comp.name) > 0) {
+             return 1;
+                // return this.name.compareTo(comp.name);
+            }  else if((this.name.compareTo(comp.name) < 0)) {
+            	return -1;
+            }
+               else if (this.rollno > comp.rollno) {
+                    return 1;
+                } else if (this.rollno < comp.rollno) {
+                    return -1;
+                }
+                return 0;
+            
+        }
+    
+
+
+
+		// if(this.marks > comp.marks) {
+		// 	return 1;
+		// }
+		// else if(this.marks < comp.marks) {
+		// 	return -1;
+		// } 
+		// else if(this.rollno > comp.rollno) {
+		// 		return 1;
+		// 	}
+		// 	else if(this.rollno < comp.rollno) {
+		// 		return -1;
+		// 	}
+		// else {
+		// 	return this.name.compareTo(comp.name);
+		// } 
 		
 		// return 0;
-	}
+	
 	
 }
 class Sorting {
