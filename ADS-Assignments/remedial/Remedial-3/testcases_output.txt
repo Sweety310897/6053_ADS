@@ -6,10 +6,10 @@ Expected Output:
 1004,Shreya,94.0
 
 Your Output: 
-91
-92
-93
-94
+1001 Mark 91
+1002 Bob 92
+1003 Raju 93
+1004 Shreya 94
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -22,9 +22,9 @@ Expected Output:
 1009,Syed,91.0
 
 Your Output: 
-91
-91
-91
+1001 Mark 91
+1009 Syed 91
+1008 Raju 91
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -70,7 +70,7 @@ Expected Output:
 8,Deepak,99.0
 
 Your Output: 
-99
+8 Deepak 99
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -79,8 +79,8 @@ This marks are not awarded to any student
 1010,Bob,90.0
 
 Your Output: 
-90
-91
+1010 Bob 90
+1001 Mark 91
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
