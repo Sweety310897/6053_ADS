@@ -43,34 +43,14 @@ public class Solution {
 					// System.out.println("hi");
 					System.out.println(tempeach[0] + "," + tempeach[1] + "," +tempeach[2]);
 				}
+				else {
+					System.out.println("This marks are not awarded to any student");
+				}
 			}
 			// System.out.println(tempstored[j]);
 
 
-			// String tempval = tempstored[j];
-			// String[] tempvalspace = tempval.split(" ");
-			// String str1 = "";
-			// String marksval = tempvalspace[2];
-			// System.out.println(tempvalspace[0]);
-			// System.out.println(marksval + "val");
-			// System.out.println(tempnum + "v");
-			// System.out.println(tempnum);
-			// System.out.println(Arrays.toString(tempvalspace));
-			// if(marksval.equals(tempnum)) {
-			// 	for(int k =0;k<3;k++) {
-				
-			// 	str1 += tempvalspace[k] + ",";
 			
-					
-			// }
-			// System.out.println(str1.substring(0, str1.length() - 1));
-				// System.out.println("hi");
-			// }
-			
-			// System.out.println(str1);
-			
-			// System.out.println(tempstored[j]);
-		
      	}   
 	}
 }
