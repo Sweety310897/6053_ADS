@@ -34,8 +34,8 @@ public class Solution {
 			String tempval = tempstored[j];
 			String[] tempvalspace = tempval.split(" ");
 			String str1 = "";
-			
-			for(int k =0;k<2;k++) {
+			// System.out.println(Arrays.toString(tempvalspace));
+			for(int k =0;k<3;k++) {
 				
 				str1 += tempvalspace[k] + ",";
 			
