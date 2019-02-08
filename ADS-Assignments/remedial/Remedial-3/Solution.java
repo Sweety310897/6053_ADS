@@ -39,13 +39,15 @@ public class Solution {
 				// System.out.println(each);
 				String[] tempeach = each.split(" ");
 				double temppp = Double.parseDouble(tempeach[2]);
-				if(tempnum == temppp) {
+				try {
+					if(tempnum == temppp) {
 					// System.out.println("hi");
 					System.out.println(tempeach[0] + "," + tempeach[1] + "," +tempeach[2]);
+				}	
+				} catch(Exception e) {
+					System.out.println("marks");
 				}
-				else {
-					System.out.println("This marks are not awarded to any student");
-				}
+				
 			}
 			// System.out.println(tempstored[j]);
 
