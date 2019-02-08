@@ -29,13 +29,16 @@ public class Solution {
 
 
 		for(int j =0;j<num;j++) {
-			int tempnum = Integer.parseInt(scan.nextLine());
+			String tempnum = scan.nextLine();
 			// System.out.println(tempnum);
 			String tempval = tempstored[j];
 			String[] tempvalspace = tempval.split(" ");
 			String str1 = "";
-			for(int k =0;k<3;k++) {
+			
+			for(int k =0;k<2;k++) {
+				
 				str1 += tempvalspace[k] + ",";
+			
 				
 			}
 			// System.out.println(str1);
