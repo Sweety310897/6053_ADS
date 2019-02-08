@@ -3,8 +3,8 @@ import java.util.Arrays;
 class Student {
 	String name;
 	int rollno;
-	int marks;
-	Student(int rollno,String name, int marks) {
+	double marks;
+	Student(int rollno,String name, Double marks) {
 		
 		this.rollno = rollno;
 		this.name = name;
@@ -16,7 +16,7 @@ class Student {
 	public int getRollno() {
 		return this.rollno;
 	}
-	public int getMarks() {
+	public Double getMarks() {
 		return this.marks;
 	}
 	public int compareTo(Student comp) {

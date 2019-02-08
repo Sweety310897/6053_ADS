@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 1001,Mark,91.0
 1002,Bob,92.0
@@ -6,10 +6,10 @@ Expected Output:
 1004,Shreya,94.0
 
 Your Output: 
-1001,Mark,91
-1002,Bob,92
-1003,Raju,93
-1004,Shreya,94
+1001,Mark,91.0
+1002,Bob,92.0
+1003,Raju,93.0
+1004,Shreya,94.0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -22,9 +22,9 @@ Expected Output:
 1009,Syed,91.0
 
 Your Output: 
-1001,Mark,91
-1009,Syed,91
-1008,Raju,91
+1001,Mark,91.0
+1009,Syed,91.0
+1008,Raju,91.0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -32,11 +32,7 @@ Expected Output:
 This marks are not awarded to any student
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "99.9"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:11)
+8,Rajesh,99.9
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -51,11 +47,8 @@ Expected Output:
 8,Rajesh,99.9
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "99.9"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:652)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:11)
+1,Deepak,99.0
+7,Manasa,99.0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -70,7 +63,7 @@ Expected Output:
 8,Deepak,99.0
 
 Your Output: 
-8,Deepak,99
+8,Deepak,99.0
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -79,8 +72,8 @@ This marks are not awarded to any student
 1010,Bob,90.0
 
 Your Output: 
-1010,Bob,90
-1001,Mark,91
+1010,Bob,90.0
+1001,Mark,91.0
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
