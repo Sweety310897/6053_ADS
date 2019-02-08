@@ -33,9 +33,16 @@ class Student implements Comparable{
 		}
 		else if(this.marks < comp.marks) {
 			return -1;
-		} else {
+		} else if(this.rollno > comp.rollno) {
+				return 1;
+			}
+			else if(this.rollno < comp.rollno) {
+				return -1;
+			}
+		else {
 			return this.name.compareTo(comp.name);
-		}
+		} 
+		
 		// return 0;
 	}
 	
