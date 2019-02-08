@@ -10,6 +10,9 @@ class Student implements Comparable{
 		this.name = name;
 		this.marks = marks;
 	}
+	Student(Double marks) {
+		this.marks=marks;
+	}
 	public String getame() {
 		return this.name;
 	}
