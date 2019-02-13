@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Clark
 Rivest
@@ -6,10 +6,7 @@ Dan
 Abegg
 
 Your Output: 
-Clark
-Rivest
-Dan
-Abegg
+
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -61,28 +58,9 @@ Abegg
 Brian Caffrey
 
 Your Output: 
-Clark
-Rhian Cahill
-Cozbi A. Cabrera
-Sasha Cagen
-Rivest
-Access
-Rachel Caine
-Alice
-Biba Caggiano
-Peter
-David Cabot
-Adams
-Yassi
-Wayne
-Jonathan Cainer
-Jeannette Caines
-Charles
-Bob
-Knuth
-Maria Cabezas
+2.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -151,8 +129,9 @@ Megon
 Meili Cady
 
 Your Output: 
+2.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -873,19 +852,8 @@ Thelma Page
 Vicky Hales-Dutton
 
 Your Output: 
-Stuart B. MacBride
-Wayne Pacelle
-H3CZ
-John Jacobs
-Alison Mackey PhD
-Amanda Mackenzie Stuart
-Elaine Pagels
-Tessa Hadley
-Sammy Hagar
-Keith Habersberger
-Yamile Saied Méndez
-Namita Jain
+0.051
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:55)
 ----------------------------------------
 
