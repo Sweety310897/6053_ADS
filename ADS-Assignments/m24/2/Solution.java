@@ -83,7 +83,7 @@ class Student {
 		return this.marks;
 	}
 	public String toString() {
-		return this.rollno + "," + this.name +"," + this.marks;
+		return this.name;
 	}
 
 }

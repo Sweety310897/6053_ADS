@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Clark
 Rivest
@@ -6,10 +6,10 @@ Dan
 Abegg
 
 Your Output: 
-141,Clark,76.7
-118,Rivest,78.4
-142,Dan,85.5
-111,Abegg,65.4
+Clark
+Rivest
+Dan
+Abegg
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -61,26 +61,26 @@ Abegg
 Brian Caffrey
 
 Your Output: 
-141,Clark,76.4
-26,Rhian Cahill,76.5
-12,Cozbi A. Cabrera,77.3
-34,Sasha Cagen,77.3
-118,Rivest,78.2
-135,Access,85.6
-66,Rachel Caine,87.6
-101,Alice,88.3
-25,Biba Caggiano,88.4
-113,Peter,88.8
-151,David Cabot,90.6
-103,Adams,91.2
-134,Yassi,94.5
-107,Wayne,98.3
-77,Jonathan Cainer,98.7
-88,Jeannette Caines,99.3
-108,Charles,99.4
-102,Bob,100.0
-104,Knuth,100.1
-150,Maria Cabezas,100.7
+Clark
+Rhian Cahill
+Cozbi A. Cabrera
+Sasha Cagen
+Rivest
+Access
+Rachel Caine
+Alice
+Biba Caggiano
+Peter
+David Cabot
+Adams
+Yassi
+Wayne
+Jonathan Cainer
+Jeannette Caines
+Charles
+Bob
+Knuth
+Maria Cabezas
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:52)
 ----------------------------------------
@@ -873,18 +873,18 @@ Thelma Page
 Vicky Hales-Dutton
 
 Your Output: 
-10172,Stuart B. MacBride,96.83
-10229,Wayne Pacelle,97.54
-10001,H3CZ,97.83
-10117,John Jacobs,98.13
-10225,Alison Mackey PhD,98.39
-10223,Amanda Mackenzie Stuart,98.56
-10254,Elaine Pagels,98.7
-10022,Tessa Hadley,98.87
-10028,Sammy Hagar,99.38
-10007,Keith Habersberger,99.46
-10151,Yamile Saied Méndez,99.65
-10147,Namita Jain,99.9
+Stuart B. MacBride
+Wayne Pacelle
+H3CZ
+John Jacobs
+Alison Mackey PhD
+Amanda Mackenzie Stuart
+Elaine Pagels
+Tessa Hadley
+Sammy Hagar
+Keith Habersberger
+Yamile Saied Méndez
+Namita Jain
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:52)
 ----------------------------------------

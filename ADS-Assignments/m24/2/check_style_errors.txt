@@ -404,6 +404,5 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:79:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:82:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:85:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\m24\2\Solution.java:86:55: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 50 errors.
