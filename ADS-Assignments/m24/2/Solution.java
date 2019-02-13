@@ -29,7 +29,10 @@ public class Solution {
 			if(tempq[0].equals("BE")) {
 				for(Float each: b.keys(Float.parseFloat(tempq[1]),Float.parseFloat(tempq[2]))) {
 					// System.out.println(b.get(each));
-					System.out.println(b.get(each));
+					// System.out.println(b.get(each));
+					for(Student e: b.get(each)) {
+						System.out.println(e);
+					}
 					// Student tempb = b.get(each);
 					// System.out.println(tempb);
 				}
@@ -37,7 +40,10 @@ public class Solution {
 			if(tempq[0].equals("GE")) {
 				for(Float each: b.keys(Float.parseFloat(tempq[1]),b.max())) {
 					// System.out.println(b.get(each));
-					System.out.println(b.get(each));
+					// System.out.println(b.get(each));
+					for(Student e: b.get(each)) {
+						System.out.println(e);
+					}
 					// Student tempb = b.get(each);
 					// System.out.println(tempb);
 				}
@@ -45,7 +51,11 @@ public class Solution {
 			if(tempq[0].equals("LE")) {
 				for(Float each: b.keys(b.min(),Float.parseFloat(tempq[2]))) {
 					// System.out.println(b.get(each));
-					System.out.println(b.get(each));
+					// System.out.println(b.get(each));
+					for(Student e: b.get(each)) {
+						System.out.println(e);
+					}
+
 					// Student tempb = b.get(each);
 					// System.out.println(tempb);
 				}
