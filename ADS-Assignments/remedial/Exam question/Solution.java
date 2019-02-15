@@ -78,7 +78,7 @@ class WordSyn {
 	void presenter() {
 		Scanner sc = new Scanner(System.in);
 		String line = sc.nextLine();
-		System.out.println(lhm);
+		// System.out.println(lhm);
 		if (lhm.get(line) != null) {
 		int totalfreq = (int) lhm.get(line).get(0);
 		ArrayList<WordProfileGeneratorr> comp = new ArrayList<WordProfileGeneratorr>();
