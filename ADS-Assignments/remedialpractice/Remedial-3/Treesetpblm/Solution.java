@@ -22,12 +22,14 @@ public class Solution {
         //     Collections.sort(b.get(each));
         // }
         int q = Integer.parseInt(scan.nextLine());
+        int f = 0;
         for(int k = 0;k<q;k++) {
             float tempval  = Float.parseFloat(scan.nextLine());
             // System.out.println(tempval);
             if(b.contains(tempval)) {
                     // System.out.println("hi");
                 // System.out.println(b.keys());
+                f = 1;
                 for(Float each: b.keys(tempval,tempval)) {
                     // System.out.println(b.get(each));
 
@@ -36,6 +38,9 @@ public class Solution {
                         System.out.println(e);
                     }
                 }
+            if(f==0) {
+                System.out.println("This marks are not awarded to any student");
+            }
 
                 // b.keys(tempval,tempval)
                 
