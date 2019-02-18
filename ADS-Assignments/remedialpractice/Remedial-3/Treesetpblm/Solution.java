@@ -38,7 +38,7 @@ public class Solution {
                         System.out.println(e);
                     }
                 }
-            if(f!=0) {
+            if(f!=1) {
                 System.out.println("This marks are not awarded to any student");
             }
 
