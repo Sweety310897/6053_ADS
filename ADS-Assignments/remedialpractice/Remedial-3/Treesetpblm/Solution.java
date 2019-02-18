@@ -38,17 +38,10 @@ public class Solution {
                         System.out.println(e);
                     }
                 }
+            
+            }
             if(f!=1) {
                 System.out.println("This marks are not awarded to any student");
-            }
-
-                // b.keys(tempval,tempval)
-                
-                // System.out.println(b.get(tempval).toString());
-                // for(Student e:b.get(tempval)) {
-                //     System.out.println(e);
-                //     // System.out.println(b.get(tempval).toString());
-                // }
             }
         }
 
