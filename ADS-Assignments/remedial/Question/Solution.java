@@ -42,7 +42,7 @@ public class Solution {
 			}
 			double tempc = c*100;
 			double size = sorted.size();
-			System.out.println(size);
+			// System.out.println(size);
 			double finalval = tempc/size;
 			// System.out.println(tempc/size);
 			// double per = tempc/Double.parseDouble(sorted.size());

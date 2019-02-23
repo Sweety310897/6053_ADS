@@ -13,7 +13,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "7
 	at Solution.main(Solution.java:20)
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 50.0
 30.0
@@ -22,15 +22,10 @@ Expected Output:
 70.0
 
 Your Output: 
-10.0
 50.0
-10.0
 30.0
-10.0
 30.0
-10.0
 100.0
-10.0
 70.0
 ----------------------------------------
 
@@ -68,7 +63,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "9
 	at Solution.main(Solution.java:20)
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 100.0
 100.0
@@ -76,13 +71,9 @@ Expected Output:
 100.0
 
 Your Output: 
-8.0
 100.0
-8.0
 100.0
-8.0
 100.0
-8.0
 100.0
 ----------------------------------------
 
@@ -102,7 +93,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "9
 	at Solution.main(Solution.java:20)
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 20.0
 20.0
@@ -128,43 +119,23 @@ Expected Output:
 Your Output: 
 20.0
 20.0
-20.0
-20.0
-20.0
 40.0
-20.0
 40.0
-20.0
 60.0
-20.0
 60.0
-20.0
 80.0
-20.0
 80.0
-20.0
 100.0
-20.0
 100.0
 20.0
 20.0
-20.0
-20.0
-20.0
 40.0
-20.0
 40.0
-20.0
 60.0
-20.0
 60.0
-20.0
 80.0
-20.0
 80.0
-20.0
 100.0
-20.0
 100.0
 ----------------------------------------
 
