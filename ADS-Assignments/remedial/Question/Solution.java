@@ -12,17 +12,17 @@ import static java.util.Map.Entry.*;
 public class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		HashMap<Integer,Integer> hm = new HashMap<>();
+		HashMap<Integer,Float> hm = new HashMap<>();
 		int range = Integer.parseInt(scan.nextLine());
 		for(int i = 0; i < range; i++) {
 			String[] temp = scan.nextLine().split(",");
 			if(!hm.containsKey(Integer.parseInt(temp[0]))) {
-				int tempnum = Integer.parseInt(temp[1].trim());
+				float tempnum = Float.parseFloat(temp[1].trim());
 				hm.put(Integer.parseInt(temp[0]),tempnum);
 			}
 		}
 		// System.out.println(hm.keySet());
-		Map<Integer, Integer> sorted = hm.entrySet().stream().sorted(comparingByValue())
+		Map<Integer, Float> sorted = hm.entrySet().stream().sorted(comparingByValue())
         .collect(
             toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2,
                 LinkedHashMap::new));

@@ -277,8 +277,9 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:15:33: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:17:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:19:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:20: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:21:66: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:25: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:25: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:33: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:33:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:37:28: 'for' is not followed by whitespace. [WhitespaceAfter]
@@ -298,4 +299,4 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:95: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\Question\Solution.java:102: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 36 errors.
