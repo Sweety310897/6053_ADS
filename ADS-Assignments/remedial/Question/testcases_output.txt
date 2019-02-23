@@ -1,0 +1,141 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+16.67
+33.33
+66.67
+100.0
+
+Your Output: 
+Exception in thread "main" java.lang.NumberFormatException: For input string: "78         "
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:20)
+----------------------------------------
+
+########## Testcase 1: Passed ##########
+Expected Output: 
+50.0
+30.0
+30.0
+100.0
+70.0
+
+Your Output: 
+50.0
+30.0
+30.0
+100.0
+70.0
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+100.0
+
+Your Output: 
+Exception in thread "main" java.lang.NumberFormatException: For input string: "99.9"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:20)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+50.0
+50.0
+100.0
+100.0
+
+Your Output: 
+Exception in thread "main" java.lang.NumberFormatException: For input string: "99.9"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:20)
+----------------------------------------
+
+########## Testcase 4: Passed ##########
+Expected Output: 
+100.0
+100.0
+100.0
+100.0
+
+Your Output: 
+100.0
+100.0
+100.0
+100.0
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+90.0
+40.0
+20.0
+70.0
+20.0
+
+Your Output: 
+Exception in thread "main" java.lang.NumberFormatException: For input string: "91.4"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Solution.main(Solution.java:20)
+----------------------------------------
+
+########## Testcase 6: Passed ##########
+Expected Output: 
+20.0
+20.0
+40.0
+40.0
+60.0
+60.0
+80.0
+80.0
+100.0
+100.0
+20.0
+20.0
+40.0
+40.0
+60.0
+60.0
+80.0
+80.0
+100.0
+100.0
+
+Your Output: 
+20.0
+20.0
+40.0
+40.0
+60.0
+60.0
+80.0
+80.0
+100.0
+100.0
+20.0
+20.0
+40.0
+40.0
+60.0
+60.0
+80.0
+80.0
+100.0
+100.0
+----------------------------------------
+
