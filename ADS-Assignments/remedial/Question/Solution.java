@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
- 
+import java.lang.Math;
 import static java.util.stream.Collectors.*;
 import static java.util.Map.Entry.*;
 // import java.util.Collections;
@@ -40,9 +40,15 @@ public class Solution {
 				}
 				// System.out.println(e);
 			}
-			int tempc = c*100;
-			double per = tempc/sorted.size();
-			System.out.println(per);
+			double tempc = c*100;
+			double size = sorted.size();
+			System.out.println(size);
+			double finalval = tempc/size;
+			// System.out.println(tempc/size);
+			// double per = tempc/Double.parseDouble(sorted.size());
+			// System.out.println(per);
+			double roundOff = (double) Math.round(finalval * 100) / 100;
+			System.out.println(roundOff);
 		}
 
 	}
