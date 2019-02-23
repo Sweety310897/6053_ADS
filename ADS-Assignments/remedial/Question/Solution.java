@@ -17,7 +17,8 @@ public class Solution {
 		for(int i = 0; i < range; i++) {
 			String[] temp = scan.nextLine().split(",");
 			if(!hm.containsKey(Integer.parseInt(temp[0]))) {
-				hm.put(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]));
+				int tempnum = Integer.parseInt(temp[1].trim());
+				hm.put(Integer.parseInt(temp[0]),tempnum);
 			}
 		}
 		// System.out.println(hm.keySet());
