@@ -26,9 +26,10 @@ public class Solution {
 			if(temp[0].equals("Ranking")) {
 				// System.out.println("rank");
 				int k = 0;
+				System.out.println(" ");
 				while(maxpq.size() > 0) {
 					k++;
-					System.out.println(k + " " + maxpq.delMax());
+					System.out.println(k + ": " + maxpq.delMax());
 					// size--
 				}
 				// for(String each: m)

@@ -102,8 +102,8 @@ Starting audit...
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:21:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:24:37: '++' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:26:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:29:38: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:31: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:30:38: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS\ADS--Assignments\6053_ADS\ADS-Assignments\remedial\final-ADS\Question\Solution.java:32: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
 Checkstyle ends with 19 errors.
 Starting audit...
