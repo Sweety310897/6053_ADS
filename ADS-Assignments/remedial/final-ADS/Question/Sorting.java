@@ -28,7 +28,7 @@ class Student implements Comparable{
 		return this.marks;
 	}
 	public String toString() {
-		return this.rollno + " " + this.name + " " + this.degree + " " + this.marks; 
+		return this.rollno + ", " + this.name + ", " + this.degree + ", " + this.marks; 
 	}
 
 	public int compareTo(final Object object) {
