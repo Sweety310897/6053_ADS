@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.lang.Math;
+import java.util.ArrayList;
+import java.util.List;
 import static java.util.stream.Collectors.*;
 import static java.util.Map.Entry.*;
 // import java.util.Collections;
@@ -14,43 +16,79 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		HashMap<Integer,Float> hm = new HashMap<>();
 		int range = Integer.parseInt(scan.nextLine());
+		ArrayList<Float> a = new ArrayList<>();
+		ArrayList<Float> newa = new ArrayList<>();
 		for(int i = 0; i < range; i++) {
 			String[] temp = scan.nextLine().split(",");
 			if(!hm.containsKey(Integer.parseInt(temp[0]))) {
 				float tempnum = Float.parseFloat(temp[1].trim());
 				hm.put(Integer.parseInt(temp[0]),tempnum);
+				a.add(tempnum);
 			}
 		}
+		System.out.println(a + "before sort");
+		Collections.sort(a);
+		System.out.println(a + "after");
+		System.out.println(a.get(0));
+		float temparray = a.get(0);
+		System.out.println(temparray + "t");
+		// System.out.println(a + "after sort");
 		// System.out.println(hm.keySet());
-		Map<Integer, Float> sorted = hm.entrySet().stream().sorted(comparingByValue())
-        .collect(
-            toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2,
-                LinkedHashMap::new));
-        // System.out.println("map after sorting by values: " + sorted);
+		// Map<Integer, Float> sorted = hm.entrySet().stream().sorted(comparingByValue())
+  //       .collect(
+  //           toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2,
+  //               LinkedHashMap::new));
+  //       System.out.println("map after sorting by values: " + sorted);
 
 		int queries = Integer.parseInt(scan.nextLine());
-		// int sum1 = 0;
-		for(int j = 0; j < queries; j++) { 
+		for(int j = 0; j < queries; j++) {
 			int tempq = Integer.parseInt(scan.nextLine());
-			int sum1 = 0;
-			int c = 0;
-			for(int e: sorted.keySet()) {
-				if(sorted.get(e) <= sorted.get(tempq)) {
-					sum1 += sorted.get(e);
-					c += 1;
-				}
-				// System.out.println(e);
-			}
-			double tempc = c*100;
-			double size = sorted.size();
-			// System.out.println(size);
+			// System.out.println(tempq + "q");
+			float temoarval = hm.get(tempq);
+			// System.out.println(a.indexOf(temoarval) + "val");
+			// System.out.println(a[val]);
+			
+			List subArr = a.subList(0, a.indexOf(temoarval)+1);
+			// System.out.println(subArr.size());
+
+			double tempc = subArr.size()*100;
+			double size = a.size();
 			double finalval = tempc/size;
-			// System.out.println(tempc/size);
-			// double per = tempc/Double.parseDouble(sorted.size());
-			// System.out.println(per);
 			double roundOff = (double) Math.round(finalval * 100) / 100;
 			System.out.println(roundOff);
+
 		}
+
+
+
+
+
+
+
+
+
+		// int sum1 = 0;
+		// for(int j = 0; j < queries; j++) { 
+		// 	int tempq = Integer.parseInt(scan.nextLine());
+		// 	int sum1 = 0;
+		// 	int c = 0;
+		// 	for(int e: sorted.keySet()) {
+		// 		if(sorted.get(e) <= sorted.get(tempq)) {
+		// 			sum1 += sorted.get(e);
+		// 			c += 1;
+		// 		}
+		// 		// System.out.println(e);
+		// 	}
+		// 	double tempc = c*100;
+		// 	double size = sorted.size();
+		// 	// System.out.println(size);
+		// 	double finalval = tempc/size;
+		// 	// System.out.println(tempc/size);
+		// 	// double per = tempc/Double.parseDouble(sorted.size());
+		// 	// System.out.println(per);
+		// 	double roundOff = (double) Math.round(finalval * 100) / 100;
+		// 	System.out.println(roundOff);
+		// }
 
 	}
 }
